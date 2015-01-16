@@ -1,0 +1,104 @@
+/* iPhone device preview */
+.DeviceFrame.iPhone .TopLine .LeftPiece
+{
+    background-image: url('./Images/top_left.png');
+    width: 25px;
+    height: 119px;
+}
+
+.DeviceFrame.iPhone .TopLine .CenterPiece
+{
+    background-image: url('./Images/top_center.png');
+    height: 119px;
+}
+
+.DeviceFrame.iPhone .TopLine .RightPiece
+{
+    background-image: url('./Images/top_right.png');
+    width: 24px;
+    height: 119px;
+}
+
+.DeviceFrame.iPhone .CenterLine .LeftPiece
+{
+    background-image: url('./Images/center_left.png');
+    width: 25px;
+}
+
+.DeviceFrame.iPhone .CenterLine .RightPiece
+{
+    background-image: url('./Images/center_right.png');
+    width: 24px;
+}
+
+.DeviceFrame.iPhone .BottomLine .LeftPiece
+{
+    background-image: url('./Images/bottom_left.png');
+    width: 25px;
+    height: 119px;
+}
+
+.DeviceFrame.iPhone .BottomLine .CenterPiece
+{
+    background-image: url('./Images/bottom_center.png');
+    height: 119px;
+}
+
+.DeviceFrame.iPhone .BottomLine .RightPiece
+{
+    background-image: url('./Images/bottom_right.png');
+    width: 24px;
+    height: 119px;
+}
+
+.DeviceFrame.iPhone.Rotated .TopLine .LeftPiece
+{
+    background-image: url('./Images/top_left_rotated.png');
+    width: 119px;
+    height: 24px;
+}
+
+.DeviceFrame.iPhone.Rotated .TopLine .CenterPiece
+{
+    background-image: url('./Images/top_center_rotated.png');
+    height: 24px;
+}
+
+.DeviceFrame.iPhone.Rotated .TopLine .RightPiece
+{
+    background-image: url('./Images/top_right_rotated.png');
+    width: 119px;
+    height: 24px;
+}
+
+.DeviceFrame.iPhone.Rotated .CenterLine .LeftPiece
+{
+    background-image: url('./Images/center_left_rotated.png');
+    width: 119px;
+}
+
+.DeviceFrame.iPhone.Rotated .CenterLine .RightPiece
+{
+    background-image: url('./Images/center_right_rotated.png');
+    width: 119px;
+}
+
+.DeviceFrame.iPhone.Rotated .BottomLine .LeftPiece
+{
+    background-image: url('./Images/bottom_left_rotated.png');
+    width: 119px;
+    height: 25px;
+}
+
+.DeviceFrame.iPhone.Rotated .BottomLine .CenterPiece
+{
+    background-image: url('./Images/bottom_center_rotated.png');
+    height: 25px;
+}
+
+.DeviceFrame.iPhone.Rotated .BottomLine .RightPiece
+{
+    background-image: url('./Images/bottom_right_rotated.png');
+    width: 119px;
+    height: 25px;
+}

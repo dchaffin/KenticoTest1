@@ -1,0 +1,2 @@
+<%@ Control Language="C#" AutoEventWireup="true" Inherits="CMSWebParts_Wireframe_Components_List" CodeFile="~/CMSWebParts/Wireframe/Components/List.ascx.cs" %>
+<cms:EditableWebPartList runat="server" id="ltlText" CssClass="WireframeText" RenderAsTag="ul" PropertyName="Items" Type="TextArea" />

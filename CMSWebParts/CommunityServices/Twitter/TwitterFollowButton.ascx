@@ -1,0 +1,2 @@
+<%@ Control Language="C#" AutoEventWireup="true" Inherits="CMSWebParts_CommunityServices_Twitter_TwitterFollowButton" CodeFile="~/CMSWebParts/CommunityServices/Twitter/TwitterFollowButton.ascx.cs" %>
+<asp:Literal runat="server" ID="ltlFollowButtonCode" EnableViewState="false" />

@@ -1,0 +1,686 @@
+.ActionSearch
+{
+    height: 25px;
+    width: 135px;
+}
+
+.ActionSearchTxt
+{
+    border: solid 1px #AEAEAE;
+    padding: 0;
+    width: 103px;
+    height: 18px;
+    float: left;
+}
+
+.RTL .ActionSearchTxt
+{
+    float: right;
+}
+
+.SearchBtnPad
+{
+    float: right;
+    padding-top: 1px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.RTL .SearchBtnPad
+{
+    float: left;
+}
+
+.SearchImgBtn
+{
+    height: 16px;
+    width: 16px;
+    cursor: pointer;
+}
+
+.GraphContainer
+{
+    border: 1px solid #cccccc;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+}
+
+.Graph
+{
+    width: 5000px;
+    height: 5000px;
+    position: relative;
+    padding: 40px;
+    overflow: hidden;
+    background: url('../../CMSPages/GetResource.ashx?image=Design/Controls/UniGraph/bg.png') repeat;
+}
+
+.GraphProgress
+{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 5px 15px 5px 0;
+    border: solid 1px #73797D;
+    box-shadow: 2px 2px 3px #73797D;
+    background-color: #eee;
+    z-index: 1000;
+    -moz-user-select: none;
+}
+
+.GraphProgress span
+{
+    vertical-align: middle;
+}
+
+.GraphProgress img
+{
+    vertical-align: middle;
+    margin: 0 5px;
+}
+
+.RTL .GraphProgress
+{
+    left: auto;
+    right: 10px;
+}
+
+.GraphLegend
+{
+    z-index: 1000;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 10px 20px;
+    border: solid 1px #73797D;
+    margin: 5px;
+    background: #bbb;
+    opacity: 0.85;
+    -moz-user-select: none;
+}
+
+.RTL .GraphLegend
+{
+    left: 0;
+    right: auto;
+}
+
+.GraphLegend .ConnectorExample
+{
+    width: 25px;
+    height: 2px;
+    float: left;
+    margin-top: 0.5em;
+    margin-right: 10px;
+}
+
+.RTL .GraphLegend .ConnectorExample
+{
+    float: right;
+    margin-right: 0px;
+    margin-left: 10px;
+}
+
+.GraphLegend .ConnectorExample.Manual
+{
+    background-color: rgb(125,255,255);
+}
+
+.GraphLegend .ConnectorExample.Automatic
+{
+    background-color: rgb(255,255,255);
+}
+
+.Graph.ReadOnly
+{
+    background: #8a9196;
+}
+
+._jsPlumb_connector
+{
+    z-index: 4;
+}
+
+._jsPlumb_connector.NewConnection
+{
+    z-index: 198 !important;
+}
+
+._jsPlumb_endpoint.ui-draggable
+{
+    cursor: move;
+}
+
+._jsPlumb_endpoint
+{
+    z-index: 6;
+    opacity: 1 !important;
+}
+
+
+
+._jsPlumb_endpoint.NewConnection
+{
+    z-index: 199 !important;
+}
+
+
+.ContentMenu.GraphMenu
+{
+    margin-top: 8px;
+    height: 65px
+}
+
+.GraphMenu .UniMenuContent
+{
+    height: 50px;
+}
+
+.GraphMenu .UniMenuSeparator
+{
+    height: 58px;
+}
+
+.UniGraph
+{
+    height: 300px;
+}
+
+.UniGraph.Move *, .Graph.ReadOnly, .Graph.ReadOnly *
+{
+    cursor: move !important;
+}
+
+._jsPlumb_endpoint.Front
+{
+    z-index: 96;
+}
+
+.Node.Front
+{
+    z-index: 99 !important;
+}
+
+._jsPlumb_connector.Selected
+{
+    z-index: 97;
+}
+
+._jsPlumb_endpoint.Selected
+{
+    z-index: 98;
+}
+
+.Node.NewConnection
+{
+    z-index: 200 !important;
+}
+
+.AgregatorNode
+{
+    border: 0px;
+    opacity: 0;
+    width: 20px;
+    height: 20px;
+}
+
+.AgregatorNode:hover
+{
+    border: 0px;
+    opacity: 0;
+    width: 20px;
+    height: 20px;
+}
+
+.Node .LabelEdit
+{
+    position: absolute;
+    left: 0px;
+    min-height: 18px;
+    border: 1px solid #8d8d8d;
+    font-family: Arial, Helvetica !important;
+    font-size: 12px;
+    padding: 3px 2px 0px 2px;
+    margin: 3px 2px 0px 2px;
+    line-height: 12px;
+    z-index: 100;
+    -webkit-touch-callout: text;
+    -webkit-user-select: text;
+}
+
+.RTL .Node .LabelEdit
+{
+    left: auto;
+    right: 0px;
+}
+
+/* Clears header content */
+.clear
+{
+    clear: both;
+}
+
+/* Container */
+.Node
+{
+    z-index: 20 !important;
+    position: absolute;
+    min-width: 120px;
+    max-width: 500px;
+    border: 1px solid #000000;
+    cursor: move;
+}
+
+.drophover *
+{
+    border: 3px solid black !important;
+    background-color: Black !important;
+    color: Red !important;
+}
+
+.IE8 .Node
+{
+    width: 270px;
+}
+
+.IE8 .Node .header .text
+{
+    width: 165px;
+    padding-right: 0px;
+}
+
+/* Tooltips */
+.tooltip
+{
+    max-width: 300px;
+    background-color: #eee;
+    padding: 3px;
+    color: #220;
+    z-index: 1001;
+    border: 1px solid black;
+    opacity: 0.85;
+}
+
+/* Container header */
+.Node .header
+{
+    width: 100%;
+    min-height: 27px;
+    border-bottom: 1px solid #000000;
+}
+
+/* Container header backgrounds */
+.Node .header.brown
+{
+    background: #764c20 url('../../CMSPages/GetResource.ashx?image=Design/Controls/UniGraph/brown_bg.png') repeat-x top left;
+    -webkit-box-shadow: inset 0px 0px 1px 1px #b58655;
+    -moz-box-shadow: inset 0px 0px 1px 1px #b58655;
+    box-shadow: inset 0px 0px 1px 1px #b58655;
+}
+
+.Node .header.darkblue
+{
+    background: #1f458d url('../../CMSPages/GetResource.ashx?image=Design/Controls/UniGraph/darkblue_bg.png') repeat-x top left;
+    -webkit-box-shadow: inset 0px 0px 1px 1px #0389d5;
+    -moz-box-shadow: inset 0px 0px 1px 1px #0389d5;
+    box-shadow: inset 0px 0px 1px 1px #0389d5;
+}
+
+.Node .header.lightblue
+{
+    background: #4d88ff url('../../CMSPages/GetResource.ashx?image=Design/Controls/UniGraph/lightblue_bg.png') repeat-x top left;
+    -webkit-box-shadow: inset 0px 0px 1px 1px #80c2ff;
+    -moz-box-shadow: inset 0px 0px 1px 1px #80c2ff;
+    box-shadow: inset 0px 0px 1px 1px #80c2ff;
+}
+
+.Node .header.green
+{
+    background: #4c6004 url('../../CMSPages/GetResource.ashx?image=Design/Controls/UniGraph/green_bg.png') repeat-x top left;
+    -webkit-box-shadow: inset 0px 0px 1px 1px #81a402;
+    -moz-box-shadow: inset 0px 0px 1px 1px #81a402;
+    box-shadow: inset 0px 0px 1px 1px #81a402;
+}
+
+.Node .header.gray
+{
+    background: #9b9b9b url('../../CMSPages/GetResource.ashx?image=Design/Controls/UniGraph/gray_bg.png') repeat-x top left;
+    -webkit-box-shadow: inset 0px 0px 1px 1px #e2e2e2;
+    -moz-box-shadow: inset 0px 0px 1px 1px #e2e2e2;
+    box-shadow: inset 0px 0px 1px 1px #e2e2e2;
+}
+
+.Node .header.orange
+{
+    background: #ac5301 url('../../CMSPages/GetResource.ashx?image=Design/Controls/UniGraph/orange_bg.png') repeat-x top left;
+    -webkit-box-shadow: inset 0px 0px 1px 1px #f39f23;
+    -moz-box-shadow: inset 0px 0px 1px 1px #f39f23;
+    box-shadow: inset 0px 0px 1px 1px #f39f23;
+}
+
+/* Container header left icon */
+.Node .header .icon
+{
+    float: left;
+    width: 16px;
+    height: 16px;
+    margin: 5px 0 5px 5px;
+}
+
+.RTL .Node .header .icon
+{
+    float: right;
+    margin: 5px 5px 5px 0;
+}
+
+/* Container header left icon image */
+.Userchoice.Node .header .icon
+{
+    background: transparent url('../../CMSPages/GetResource.ashx?image=Design/Controls/UniGraph/userchoice.png') no-repeat center center;
+}
+
+.Condition.Node .header .icon
+{
+    background: transparent url('../../CMSPages/GetResource.ashx?image=Design/Controls/UniGraph/condition.png') no-repeat center center;
+}
+
+.Multichoice.Node .header .icon
+{
+    background: transparent url('../../CMSPages/GetResource.ashx?image=Design/Controls/UniGraph/multichoice.png') no-repeat center center;
+}
+
+.MultichoiceFirstWin.Node .header .icon
+{
+    background: transparent url('../../CMSPages/GetResource.ashx?image=Design/Controls/UniGraph/multichoice_pri.png') no-repeat center center;
+}
+
+/* Container header text */
+.Node .header .text
+{
+    float: left;
+    font-family: Arial, Helvetica;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 12px;
+    color: #ffffff;
+    margin: 7px 5px 5px 5px;
+    max-width: 395px;
+    padding-right: 10px;
+}
+
+.RTL .Node .header .text
+{
+    float: right;
+    padding-right: 0px;
+    padding-left: 10px;
+}
+
+.Node .header.gray .text
+{
+    color: #565656;
+}
+
+/* Container header left button */
+.Node .header .button
+{
+    float: right;
+    width: 16px;
+    height: 17px;
+    margin: 5px 5px 5px 0;
+    cursor: pointer;
+}
+
+.RTL .Node .header .button
+{
+    float: left;
+    margin: 5px 0 5px 5px;
+}
+
+/* Container header left button image */
+.Node .header.brown .button.plus
+{
+    background: transparent url('../../CMSPages/GetResource.ashx?image=Design/Controls/UniGraph/brown_plus.png') no-repeat center center;
+}
+
+.Node .header.brown .button.del
+{
+    background: transparent url('../../CMSPages/GetResource.ashx?image=Design/Controls/UniGraph/brown_close.png') no-repeat center center;
+}
+
+.Node .header.brown .button.pen
+{
+    background: transparent url('../../CMSPages/GetResource.ashx?image=Design/Controls/UniGraph/brown_pen.png') no-repeat center center;
+}
+
+.Node .header.darkblue .button.del
+{
+    background: transparent url('../../CMSPages/GetResource.ashx?image=Design/Controls/UniGraph/darkblue_close.png') no-repeat center center;
+}
+
+.Node .header.darkblue .button.pen
+{
+    background: transparent url('../../CMSPages/GetResource.ashx?image=Design/Controls/UniGraph/darkblue_pen.png') no-repeat center center;
+}
+
+.Node .header.lightblue .button.del
+{
+    background: transparent url('../../CMSPages/GetResource.ashx?image=Design/Controls/UniGraph/lightblue_close.png') no-repeat center center;
+}
+
+.Node .header.lightblue .button.pen
+{
+    background: transparent url('../../CMSPages/GetResource.ashx?image=Design/Controls/UniGraph/lightblue_pen.png') no-repeat center center;
+}
+
+.Node .header.green .button.del
+{
+    background: transparent url('../../CMSPages/GetResource.ashx?image=Design/Controls/UniGraph/green_close.png') no-repeat center center;
+}
+
+.Node .header.green .button.pen
+{
+    background: transparent url('../../CMSPages/GetResource.ashx?image=Design/Controls/UniGraph/green_pen.png') no-repeat center center;
+}
+
+.Node .header.gray .button.del
+{
+    background: transparent url('../../CMSPages/GetResource.ashx?image=Design/Controls/UniGraph/gray_close.png') no-repeat center center;
+}
+
+.Node .header.gray .button.pen
+{
+    background: transparent url('../../CMSPages/GetResource.ashx?image=Design/Controls/UniGraph/gray_pen.png') no-repeat center center;
+}
+
+.Node .header.orange .button.del
+{
+    background: transparent url('../../CMSPages/GetResource.ashx?image=Design/Controls/UniGraph/orange_close.png') no-repeat center center;
+}
+
+.Node .header.orange .button.pen
+{
+    background: transparent url('../../CMSPages/GetResource.ashx?image=Design/Controls/UniGraph/orange_pen.png') no-repeat center center;
+}
+
+/* Container content section */
+.Node .content .main
+{
+    min-height: 30px;
+}
+
+.Node .content, .Node .content .box
+{
+    padding: 11px 8px 6px 8px;
+    -webkit-box-shadow: inset 0px 0px 1px 1px #ffffff;
+    -moz-box-shadow: inset 0px 0px 1px 1px #ffffff;
+    box-shadow: inset 0px 0px 1px 1px #ffffff;
+    font-family: Arial, Helvetica;
+    font-size: 11px;
+    line-height: 14px;
+    color: #000000;
+    background: #ffffff;
+}
+
+/* Container content section background */
+.Node .content
+{
+    background: #ffffff;
+    background: -moz-linear-gradient(top, #ffffff 35%, #dcdcdc 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(35%,#ffffff), color-stop(100%,#dcdcdc));
+    background: -webkit-linear-gradient(top, #ffffff 35%,#dcdcdc 100%);
+    background: -o-linear-gradient(top, #ffffff 35%,#dcdcdc 100%);
+    background: -ms-linear-gradient(top, #ffffff 35%,#dcdcdc 100%);
+    background: linear-gradient(top, #ffffff 35%,#dcdcdc 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dcdcdc',GradientType=0 );
+}
+
+.Node.Selected .content
+{
+    background: #ffffff;
+    background: -moz-linear-gradient(top, #fff3da 35%, #ffd883 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(35%,#fff3da), color-stop(100%,#ffd883));
+    background: -webkit-linear-gradient(top, #fff3da 35%,#ffd883 100%);
+    background: -o-linear-gradient(top, #fff3da 35%,#ffd883 100%);
+    background: -ms-linear-gradient(top, #fff3da 35%,#ffd883 100%);
+    background: linear-gradient(top, #fff3da 35%,#ffd883 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffd883',GradientType=0 );
+}
+
+._jsPlumb_endpoint.Highlight, .Node.Highlight, .ReadOnly .Node.Selected
+{
+    -webkit-box-shadow: 0px 0px 10px 5px rgba(248, 223, 167, .75);
+    -moz-box-shadow: 0px 0px 10px 5px rgba(248, 223, 167, .75);
+    box-shadow: 0px 0px 10px 5px rgba(248, 223, 167, .75);
+}
+
+._jsPlumb_endpoint.Highlight
+{
+    background-color: rgba(248, 223, 167, .75);
+}
+
+/* Container content section box */
+.Node .content .box
+{
+    position: relative;
+    padding: 0;
+    margin-bottom: 8px;
+    border: 1px solid #c1c1c1;
+    background: #ffffff;
+    background: -moz-linear-gradient(top, #ffffff 35%, #dedede 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(35%,#ffffff), color-stop(100%,#dedede));
+    background: -webkit-linear-gradient(top, #ffffff 35%,#dedede 100%);
+    background: -o-linear-gradient(top,#ffffff 35%,#dedede 100%);
+    background: -ms-linear-gradient(top, #ffffff 35%,#dedede 100%);
+    background: linear-gradient(top, #ffffff 35%,#dedede 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dedede',GradientType=0 );
+}
+
+.Node .content .box .inner
+{
+    margin: 8px 40px 8px 10px;
+}
+
+.RTL .Node .content .box .inner
+{
+    margin: 8px 10px 8px 40px;
+}
+
+.Node .content .box .del
+{
+    width: 8px;
+    height: 8px;
+    background: transparent url('../../CMSPages/GetResource.ashx?image=Design/Controls/UniGraph/close.png') no-repeat center center;
+    position: absolute;
+    top: 9px;
+    right: 9px;
+    cursor: pointer;
+}
+
+.RTL .Node .content .box .del
+{
+    right: auto;
+    left: 9px;
+}
+
+.Node .content .box .pen
+{
+    width: 8px;
+    height: 8px;
+    background: transparent url('../../CMSPages/GetResource.ashx?image=Design/Controls/UniGraph/transparent_pen.png') no-repeat center center;
+    position: absolute;
+    top: 9px;
+    right: 25px;
+    cursor: pointer;
+}
+
+.RTL .Node .content .box .pen
+{
+    right: auto;
+    left: 25px;
+}
+
+/* Container content section text */
+.Node .content p
+{
+    margin: 0;
+    padding: 0 0 8px 0;
+}
+
+/* Container content section action icon */
+.Node .content .icon
+{
+    padding: 10px;
+    min-height: 61px;
+    background: transparent no-repeat center center;
+}
+
+/* Container content section horizontal line */
+.Node .content .hr
+{
+    height: 1px;
+    width: 100%;
+    background: #c1c1c1;
+    border-bottom: 1px solid #ffffff;
+    margin: 15px 0 6px;
+}
+
+/* Container content section small letter icon */
+.Node .content .time
+{
+    width: 16px;
+    height: 18px;
+    background: transparent url('../../CMSPages/GetResource.ashx?image=Design/Controls/UniGraph/clock_small.png') no-repeat center center;
+}
+
+.Node .Editable
+{
+    cursor: text;
+}
+
+/* Textarea for editing labels */
+.Node .Localized .LabelEdit
+{
+    background-color: #efe;
+}
+
+/* Graph view positioning */
+.GraphContainer, .GraphWrapper, .UniGraph, ._jsPlumb_connector
+{
+    direction: ltr !important;
+}
+
+/* UniMenu scroller location */
+.GraphMenu .ContentMenuSlider.LeftSlider
+{
+    left: 151px;
+}
+
+.RTL .GraphMenu .ContentMenuSlider.LeftSlider
+{
+    left: auto;
+    right: 151px;
+}

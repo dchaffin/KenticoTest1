@@ -1,0 +1,3 @@
+﻿<category name="AJAX" collapsible="true" collapsedbydefault="true" />
+
+<field column="UseUpdatePanel" fieldcaption="Use update panel" visible="true" defaultvalue="false" columntype="boolean" fieldtype="checkbox" allowempty="false" fielddescription="{$documentation.webpartproperties.useupdatepanel$}" guid="dd7d576d-5abe-464b-9f25-e74c0ce62886" />

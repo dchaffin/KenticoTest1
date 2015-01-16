@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<grid>
+  <actions>
+    <action name="edit" caption="$General.Edit$" icon="Edit.png" />
+    <action name="delete" caption="$General.Delete$" icon="Delete.png" confirmation="$general.confirmdelete$" />
+  </actions>
+
+  <columns>
+    <column source="SKUName" caption="$product_list.productname$" wrap="false" localize="true" width="100%" />
+    <column source="##ALL##" externalsourcename="SKUNumber" sort="SKUNumber" caption="$product_list.productnumber$" wrap="false" />
+    <column source="##ALL##" externalsourcename="SKUPrice" sort="SKUPrice" caption="$product_list.productprice$" wrap="false" cssclass="TextRight" />
+    <column source="##ALL##" externalsourcename="SKUAvailableItems" sort="SKUAvailableItems" caption="$product_list.productavailableitems$" wrap="false" />
+    <column source="##ALL##" externalsourcename="PublicStatusID" caption="$product_list.grid.storestatus$" wrap="false" />
+    <column source="##ALL##" externalsourcename="AllowForSale" sort="SKUEnabled" caption="$com.productlist.allowforsale$" wrap="false" />
+    <column source="##ALL##" externalsourcename="SKUSiteID" sort="SKUSiteID" columnname="SKUSiteID" caption="$com.productlist.global$" wrap="false" />
+    <column source="SKUNumber" visible="false">
+      <filter type="custom" path="~/CMSModules/Ecommerce/Controls/UI/ProductFilter.ascx" />
+    </column>
+  </columns>
+
+  <objecttype name="ecommerce.skulist" />
+
+  <options>
+    <key name="DisplayFilter" value="true" />
+  </options>
+</grid>

@@ -1,0 +1,104 @@
+/* Android device preview */
+.DeviceFrame.Android_device .TopLine .LeftPiece
+{
+    background-image: url('./Images/top_left.png');
+    width: 46px;
+    height: 129px;
+}
+
+.DeviceFrame.Android_device .TopLine .CenterPiece
+{
+    background-image: url('./Images/top_center.png');
+    height: 129px;
+}
+
+.DeviceFrame.Android_device .TopLine .RightPiece
+{
+    background-image: url('./Images/top_right.png');
+    width: 50px;
+    height: 129px;
+}
+
+.DeviceFrame.Android_device .CenterLine .LeftPiece
+{
+    background-image: url('./Images/center_left.png');
+    width: 46px;
+}
+
+.DeviceFrame.Android_device .CenterLine .RightPiece
+{
+    background-image: url('./Images/center_right.png');
+    width: 50px;
+}
+
+.DeviceFrame.Android_device .BottomLine .LeftPiece
+{
+    background-image: url('./Images/bottom_left.png');
+    width: 46px;
+    height: 229px;
+}
+
+.DeviceFrame.Android_device .BottomLine .CenterPiece
+{
+    background-image: url('./Images/bottom_center.png');
+    height: 229px;
+}
+
+.DeviceFrame.Android_device .BottomLine .RightPiece
+{
+    background-image: url('./Images/bottom_right.png');
+    width: 50px;
+    height: 229px;
+}
+
+.DeviceFrame.Android_device.Rotated .TopLine .LeftPiece
+{
+    background-image: url('./Images/top_left_rotated.png');
+    width: 129px;
+    height: 50px;
+}
+
+.DeviceFrame.Android_device.Rotated .TopLine .CenterPiece
+{
+    background-image: url('./Images/top_center_rotated.png');
+    height: 50px;
+}
+
+.DeviceFrame.Android_device.Rotated .TopLine .RightPiece
+{
+    background-image: url('./Images/top_right_rotated.png');
+    width: 229px;
+    height: 50px;
+}
+
+.DeviceFrame.Android_device.Rotated .CenterLine .LeftPiece
+{
+    background-image: url('./Images/center_left_rotated.png');
+    width: 129px;
+}
+
+.DeviceFrame.Android_device.Rotated .CenterLine .RightPiece
+{
+    background-image: url('./Images/center_right_rotated.png');
+    width: 229px;
+}
+
+.DeviceFrame.Android_device.Rotated .BottomLine .LeftPiece
+{
+    background-image: url('./Images/bottom_left_rotated.png');
+    width: 129px;
+    height: 46px;
+}
+
+.DeviceFrame.Android_device.Rotated .BottomLine .CenterPiece
+{
+    background-image: url('./Images/bottom_center_rotated.png');
+    height: 46px;
+}
+
+.DeviceFrame.Android_device.Rotated .BottomLine .RightPiece
+{
+    background-image: url('./Images/bottom_right_rotated.png');
+    width: 229px;
+    height: 46px;
+}

@@ -1,0 +1,842 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Configuring Windows Communication Foundation for HTTPS</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta name="description" content="Configuring Windows Communication Foundation for HTTPS" />
+   <meta name="copyright" content="© 2012 Kentico Software" /> 
+   <meta http-equiv="Cache-control" content="no-cache" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   
+   
+   <link type="text/css" href="custom.css" rel="stylesheet" /> 
+   
+   
+   
+   <style type="text/css">
+     body { margin: 0px; background: #FFFFFF; }
+   </style>
+   
+   <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+   <script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+   
+   
+   <script type="text/javascript" src="nsh.js"></script>
+   
+   
+   
+   
+   <script type="text/javascript" src="ZeroClipboard.js"></script>
+   <script type="text/javascript">
+var permalinkData = ["index.html",true,"http://devnet.kentico.com/docs/7_0/contexthelp/index.html?configuring_wcf_https.htm","Configuring Windows Communication Foundation for HTTPS","Sorry, your browser can't bookmark pages using this function. Copy the permalink, then press Ctrl+D to bookmark the topic with the permalink.","This page is stored locally. You can only bookmark pages on a web server!"];
+
+var togTocButton = "";
+$(document).ready(function() {
+  chromeBugCheck("workaround",false);
+   
+   });
+</script>
+
+
+
+
+
+<!-- Adjustment for IE -->
+<!--[if lte IE 8]>
+<style type="text/css">
+.topichead { padding-right: 0; }
+#autoTocWrapper ul li { padding: 3px 3px 4px 3px;}
+</style>
+<![endif]-->
+<!--[if lte IE 7]>
+<style type="text/css">
+#innerdiv {height: 100%;}
+</style>
+<![endif]-->
+   
+
+
+
+         
+   <!-- CSS set with project variables and local attributes --> 
+   <style type="text/css" media="screen"> 
+   body { background: #fff; } 
+   #breadcrumbs {width: 100%; background-color: white; border-bottom: 1px solid #000; padding: 0px 0px 5px 15px;
+   margin: 3px 0; font-size: 8pt; color: #000;}
+   #breadcrumbs a { color: #000; text-decoration: none;}
+   #breadcrumbs a:visited { color: #000; }
+   #breadcrumbs a:hover { color: #098ae2; text-decoration: none; }
+   .help-url { font-size: 10pt; font-family: Arial, Verdana, Helvetica, sans-serif; 
+               color: #1f84e8; text-align: center; margin: 5px 20px 10px 0px; 
+               padding-top: 14px; border-top: 1px solid #000;}
+   .help-url a { color: #098ae2; text-decoration: none; }
+   .help-url a:visited { color: #098ae2; }
+   .help-url a:hover { color: #098ae2; text-decoration: underline; }
+   .highlight {background: #ffff40;}
+   .breadhead {padding: 5px 0px 0px 0px !important;}   
+   
+   #idcontent {overflow:auto !important;}
+    
+   #innerdiv   
+   {   
+   padding-left: 5px;
+   }
+   
+
+   
+
+   </style> 
+
+<!-- Adjustment for IE -->
+<!--[if lte IE 8]>
+<style type="text/css">
+.topichead { padding-right: 0; }
+   
+</style>
+<![endif]-->
+ <script type="text/javascript">
+// Initialize the page 
+addEvent(window, "load", nsrInit);
+addEvent(window, "load", doResize);
+addEvent(window, "resize", doResize);
+addEvent(window, "load", toggleJump);
+
+</script>
+
+<script type="text/javascript">
+function mailFB_custom() {
+var headerText = unQuot("Feedback on: Kentico CMS 7.0 Context Help - Configuring Windows Communication Foundation for HTTPS".replace('&nbsp;',''));
+var fb1 = "mailto:" + escape('Kentico Support Team <support@kentico.com>') + "?subject=" + headerText;
+var titlePath = unQuot("General &gt; Configuring Windows Communication Foundation for HTTPS /");
+var fb2 = "&body=Ref:%20" + titlePath + "%20ID:%20configuring_wcf_https%0A%0D%0A%0D" + unQuot("Dear Support Staff,") + "%0A%0D%0A%0D";
+var fb = fb1 + fb2;
+document.location.href=fb;
+}
+</script>
+
+        
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "configuring_wcf_https.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head> 
+
+<body>
+<!--ZOOMSTOP-->
+
+<div id="printheader">
+<span id="printtitle">Kentico CMS 7.0 Context Help</span><br />
+<h1 class="p_Heading1"><span class="f_Heading1">Configuring Windows Communication Foundation for HTTPS</span></h1>
+</div>
+<div id="idheader" style="border-bottom:1px solid #000;margin:0px 0px;"> 
+<table id="breadtable" border="0" cellspacing="0" cellpadding="0" width="100%"> 
+  <tr >
+  <td align="left" class="breadhead" >
+       <p id="breadcrumbs"><a href="mode_selection.htm"
+        onmouseover="document.images.main.src='home_h.gif'" 
+        onmouseout="document.images.main.src='home.gif'">
+        <img name="main" src="home.gif" border="0" alt="Home topic" title="Home topic" /></a> 
+        
+        General:</p> 
+  </td>
+  </tr>
+</table>
+<table width="99%" border="0" cellspacing="0" cellpadding="0" id="headtable"> 
+
+<!-- Script version of NavHeader -->
+  <tr id="scriptNavHead" valign="middle" style="height: auto;"> 
+    <td align="left" class="topichead" style="padding-left: 15px;"> 
+    <h1 class="p_Heading1"><span class="f_Heading1">Configuring Windows Communication Foundation for HTTPS</span></h1>
+
+    </td>
+    <td align="center" width="20" class="idnav" valign="bottom">
+     <a href="configuring_wcf.htm"
+        onmouseover="document.images.prev.src='button_prev_h.gif'" 
+        onmouseout="document.images.prev.src='button_prev.gif'">
+        <img name="prev" src="button_prev.gif" border="0" alt="Previous topic" title="Previous topic" /></a>
+     
+   </td>
+   
+   <td align="center" width="20" class="idnav" valign="bottom">
+     <a href="dashboard.htm"
+        onmouseover="document.images.next.src='button_next_h.gif'" 
+        onmouseout="document.images.next.src='button_next.gif'"><img name="next" src="button_next.gif" border="0" alt="Next topic" title="Next topic" /></a>
+        
+   </td>
+
+   
+   
+   
+   
+   
+
+     
+   <td id="print-button" align="center" width="20" class="idnav" valign="bottom">
+     <a href="javascript: print();" 
+     onmouseover="document.images.printbutton.src='print_h.gif'" 
+     onmouseout="document.images.printbutton.src='print.gif'"><img name="printbutton" border="0" alt="Print this topic" title="Print this topic" src="print.gif" /></a>
+   </td>  
+     
+     
+
+  
+   <td id="mail-feedback" align="center" width="20" class="idnav" valign="bottom">
+   <a href="#"
+        onclick='mailFB_custom();'
+        onmouseover="document.images.feedback.src='mail_h.gif'" 
+        onmouseout="document.images.feedback.src='mail.gif'"><img name="feedback" src="mail.gif" border="0" alt="Mail us feedback on this topic!" title="Mail us feedback on this topic!" /></a>
+   </td>
+   
+   <td width="4">&nbsp;</td>
+  </tr>
+<!-- End script navheader version -->
+
+<!-- NoScript version of navheader -->
+
+  <tr id="noScriptNavHead" valign="middle" style="height: auto;"> 
+    <td align="left" class="topichead"> 
+    <h1 class="p_Heading1"><span class="f_Heading1">Configuring Windows Communication Foundation for HTTPS</span></h1>
+
+    </td>
+    <td align="center" width="20" class="idnav" valign="bottom">
+     <a href="configuring_wcf.htm">
+        <img src="button_prev.gif" border="0" alt="Previous topic" title="Previous topic" /></a>
+     
+   </td>
+   
+   <td align="center" width="20" class="idnav" valign="bottom">
+     <a href="dashboard.htm">
+        <img src="button_next.gif" border="0" alt="Next topic" title="Next topic" /></a>
+        
+   </td>
+   
+   
+   
+  
+   
+
+     
+     
+   <td align="center" width="20" class="idnav" valign="bottom">
+   <img border="0" alt="JavaScript is required for the print function" title="JavaScript is required for the print function" src="print_d.gif" />
+   </td>
+     
+     
+   
+   <td align="center" width="20" class="idnav" valign="bottom">
+   <a href="mailto:Kentico%20Support%20Team%20<support@kentico.com>?subject=Documentation%20feedback&body=Ref%20ID:%20configuring_wcf_https%0D%0D"><img src="mail.gif" border="0" alt="Mail us feedback on this topic!" title="Mail us feedback on this topic!" /></a>
+   </td>
+   
+   <td width="4">&nbsp;</td>
+  </tr>
+
+<!-- End noscript navheader version -->
+  </table>
+
+<div id="autoTocWrapper"></div></div> 
+<div id="permalink" class="popups">
+<table cellspacing="3" cellpadding="0" width="100%">
+   <tr>
+   <td align="left">
+   <div id="permalink_box" style="position:relative">
+   <input type="button" id="selectPermalink" value="Copy Permalink" />
+   </div>
+   </td>
+   <td align="center">
+   <input type="button" id="selectPermalink" value="Bookmark Topic" onClick="PLclick('bookmark',window.permalinkData);" />
+   </td>
+   <td align="right">
+   <input type="button" id="closePermalink" value="Close Dialog Box"onClick="PLclick('close','');" />
+   </td>
+   </tr>
+   <tr>
+   <td colspan="3" align="center">
+    <textarea id="plinkBox" readonly="readonly"></textarea>
+   </td>
+   </tr>
+</table>
+
+
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!--ZOOMRESTART-->
+<p>By default, Windows Communication Foundation (WCF) is not configured for HTTPS. <a href="http://devnet.kentico.com/docs/7_0/devguide/workflow_designer.htm" target="_blank" class="weblink">Workflow designer</a>, <a href="http://devnet.kentico.com/docs/7_0/devguide/ma_overview.htm" target="_blank" class="weblink">Process designer</a>, and <a href="http://devnet.kentico.com/docs/7_0/devguide/chat_Quick_start.htm" target="_blank" class="weblink">Chat module</a> are dependent on WCF. </p>
+<p>&nbsp;</p>
+<p>This topic describes how you can configure the necessary files to make WCF work under HTTPS. </p>
+<p>&nbsp;</p>
+<h2 class="p_Heading2"><a id="iis_configuration"></a><span class="f_Heading2">Configuring IIS</span></h2>
+<p>&nbsp;</p>
+<p>If you want WCF to work under HTTPS, you need to add an HTTPS binding to IIS first. You can find more information on adding an HTTPS binding to your site in IIS on the following website:</p>
+<p><a href="http://technet.microsoft.com/en-us/library/cc731692(v=ws.10).aspx" target="_blank" class="weblink">http://technet.microsoft.com/en-us/library/cc731692(v=ws.10).aspx</a></p>
+<p>&nbsp;</p>
+<p>Once you configure IIS, refer to the appropriate section of the topic based on which configurations you need to make:</p>
+<p>&nbsp;</p>
+<p style="text-align: left; padding: 0px 0px 0px 13px; margin: 0px 0px 0px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><a href="configuring_wcf_https.htm#chat_https" class="topiclink">Configuring WCF to use Chat module under HTTPS only</a></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 0px 0px 0px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><a href="configuring_wcf_https.htm#chat_mixedmode" class="topiclink">Configuring WCF to use Chat module under both HTTP and HTTPS</a></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 0px 0px 0px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><a href="configuring_wcf_https.htm#process_designer_https" class="topiclink">Configuring WCF to use Process designer under HTTPS only</a></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 0px 0px 0px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><a href="configuring_wcf_https.htm#process_designer_http_https" class="topiclink">Configuring WCF to use Process designer under both HTTP and HTTPS</a></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 0px 0px 0px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><a href="configuring_wcf_https.htm#workflow_designer_https" class="topiclink">Configuring WCF to use Workflow designer under HTTPS only</a></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 0px 0px 0px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><a href="configuring_wcf_https.htm#workflow_designer_http_https" class="topiclink">Configuring WCF to use Workflow designer under both HTTP and HTTPS</a></p><p>&nbsp;</p>
+<h2 class="p_Heading2"><a id="chat_https"></a><span class="f_Heading2">Configuring WCF to use Chat module under HTTPS only</span></h2>
+<p>&nbsp;</p>
+<p>1. Open your project's web.config file.</p>
+<p>&nbsp;</p>
+<p>2. Add a binding based on <span style="font-style: italic;">WebHttpBinding</span> into the <span style="font-weight: bold;">&lt;system.serviceModel&gt; - &lt;bindings&gt;</span> section<span style="color: #0000ff;">.</span></p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table style="width:820px; border:none; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:705px; background-color:#d3d3d3; padding:12px; border:solid 1px #999999;"><p><span style="font-family: consolas; color: #a31515;">&lt;webHttpBinding</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &lt;</span><span style="font-family: consolas; color: #a31515;">binding</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">name</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">SecureHttpBinding</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">security</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">mode</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">Transport</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> /&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &lt;/</span><span style="font-family: consolas; color: #a31515;">binding</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;">&lt;/</span><span style="font-family: consolas; color: #a31515;">webHttpBinding</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p>&nbsp;</p>
+<p>3. Add the following HTTPS endpoint for the newly created binding into the <span style="font-weight: bold;">&lt;service name=CMS.Chat.ChatService&gt;</span> section.</p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table style="width:820px; border:none; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:705px; background-color:#d3d3d3; padding:12px; border:solid 1px #999999;"><p><span style="font-family: consolas; color: #0000ff;">&lt;</span><span style="font-family: consolas; color: #a31515;">endpoint</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">address</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">behaviorConfiguration</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">ChatServiceBehavior</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">binding</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">webHttpBinding</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">bindingConfiguration</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">SecureHttpBinding</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">contract</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">CMS.Chat.IChatService</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> /&gt;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p>&nbsp;</p>
+<p>4. Remove the following HTTP endpoint from the <span style="font-weight: bold;">&lt;service name=CMS.Chat.ChatService&gt;</span> section.</p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table style="width:820px; border:none; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:705px; background-color:#d3d3d3; padding:12px; border:solid 1px #999999;"><p><span style="font-family: consolas; color: #0000ff;">&lt;</span><span style="font-family: consolas; color: #a31515;">endpoint</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">address</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">behaviorConfiguration</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">ChatServiceBehavior</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">binding</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">webHttpBinding</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">cpntract</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">CMS.Chat.IChatService</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> /&gt;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p>&nbsp;</p>
+<p>5. Add the following HTTPS endpoint for the newly created binding into the <span style="font-weight: bold;">&lt;service name=CMS.Chat.ChatSupportService&gt;</span> section.</p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table style="width:820px; border:none; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:705px; background-color:#d3d3d3; padding:12px; border:solid 1px #999999;"><p><span style="font-family: consolas; color: #0000ff;">&lt;</span><span style="font-family: consolas; color: #a31515;">endpoint</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">address</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">behaviorConfiguration</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">ChatServiceBehavior</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">binding</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">webHttpBinding</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">bindingConfiguration</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">SecureHttpBinding</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">contract</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">CMS.Chat.IChatSupportService</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> /&gt;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p>6. Remove the following HTTP endpoint from the <span style="font-weight: bold;">&lt;service name=CMS.Chat.ChatSupportService&gt;</span> section.</p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table style="width:820px; border:none; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:705px; background-color:#d3d3d3; padding:12px; border:solid 1px #999999;"><p><span style="font-family: consolas; color: #0000ff;">&lt;</span><span style="font-family: consolas; color: #a31515;">endpoint</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">address</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">behaviorConfiguration</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">ChatServiceBehavior</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">binding</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">webHttpBinding</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">contract</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">CMS.Chat.IChatSupportService</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> /&gt;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p>&nbsp;</p>
+<p>7. Save the web.config file.</p>
+<p>&nbsp;</p>
+<p>This is the resulting part of the web.config file where you just configured Chat for HTTPS:</p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table style="width:820px; border:none; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:799px; background-color:#d3d3d3; padding:12px; border:solid 1px #999999;"><p><span style="font-family: consolas; color: #0000ff;">&lt;</span><span style="font-family: consolas; color: #a31515;">bindings</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">basicHttpBinding</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp;&lt;!--</span><span style="font-family: consolas; color: #008000;"> SalesForce BEGIN </span><span style="font-family: consolas; color: #0000ff;">--&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">binding</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">name</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">SalesForceBinding</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">transferMode</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">Buffered</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">security</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">mode</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">Transport</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">transport</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">clientCredentialType</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">None</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">proxyCredentialType</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">None</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">realm</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;&quot;</span><span style="font-family: consolas; color: #0000ff;"> /&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">message</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">clientCredentialType</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">UserName</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">algorithmSuite</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">Default</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> /&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp;&lt;/</span><span style="font-family: consolas; color: #a31515;">security</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp;&lt;/</span><span style="font-family: consolas; color: #a31515;">binding</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp;&lt;!--</span><span style="font-family: consolas; color: #008000;"> SalesForce END </span><span style="font-family: consolas; color: #0000ff;">--&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp;&lt;/</span><span style="font-family: consolas; color: #a31515;">basicHttpBinding</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">webHttpBinding</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">binding</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">name</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">SecureHttpBinding</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">security</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">mode</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">Transport</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> /&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp;&lt;/</span><span style="font-family: consolas; color: #a31515;">binding</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp;&lt;/</span><span style="font-family: consolas; color: #a31515;">webHttpBinding</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;">&lt;/</span><span style="font-family: consolas; color: #a31515;">bindings</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;">&lt;</span><span style="font-family: consolas; color: #a31515;">behaviors</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">endpointBehaviors</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">behavior</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">name</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">ChatServiceBehavior</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">enableWebScript</span><span style="font-family: consolas; color: #0000ff;"> /&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp;&lt;/</span><span style="font-family: consolas; color: #a31515;">behavior</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp;&lt;/</span><span style="font-family: consolas; color: #a31515;">endpointBehaviors</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;">&lt;/</span><span style="font-family: consolas; color: #a31515;">behaviors</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;">&lt;</span><span style="font-family: consolas; color: #a31515;">services</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">service</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">name</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">CMS.Chat.ChatService</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">endpoint</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">address</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">behaviorConfiguration</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">ChatServiceBehavior</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">binding</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">webHttpBinding</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">bindingConfiguration</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">SecureHttpBinding</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">contract</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">CMS.Chat.IChatService</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> /&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp;&lt;/</span><span style="font-family: consolas; color: #a31515;">service</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">service</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">name</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">CMS.Chat.ChatSupportService</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">endpoint</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">address</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">behaviorConfiguration</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">ChatServiceBehavior</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">binding</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">webHttpBinding</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">bindingConfiguration</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">SecureHttpBinding</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">contract</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">CMS.Chat.IChatService</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> /&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp;&lt;/</span><span style="font-family: consolas; color: #a31515;">service</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;">&lt;/</span><span style="font-family: consolas; color: #a31515;">services</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p>&nbsp;</p>
+<h2 class="p_Heading2"><a id="chat_mixedmode"></a><span class="f_Heading2">Configuring WCF to use Chat module under both HTTP and HTTPS</span></h2>
+<p>&nbsp;</p>
+<p>1. Open your project's web.config file.</p>
+<p>&nbsp;</p>
+<p>2. Create a binding based on <span style="font-style: italic;">WebHttpBinding</span> in the <span style="font-weight: bold;">&lt;system.serviceModel&gt; - &lt;bindings&gt;</span> section<span style="color: #0000ff;">.</span></p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table style="width:820px; border:none; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:705px; background-color:#d3d3d3; padding:12px; border:solid 1px #999999;"><p><span style="font-family: consolas; color: #a31515;">&lt;webHttpBinding</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &lt;</span><span style="font-family: consolas; color: #a31515;">binding</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">name</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">SecureHttpBinding</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">security</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">mode</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">Transport</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> /&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &lt;/</span><span style="font-family: consolas; color: #a31515;">binding</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;">&lt;/</span><span style="font-family: consolas; color: #a31515;">webHttpBinding</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p>&nbsp;</p>
+<p>3. Add both the HTTP and HTTPS endpoints into the <span style="font-weight: bold;">&lt;service name=CMS.Chat.ChatService&gt;</span> section. Note that the HTTP endpoint is present in the file by default.</p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table style="width:820px; border:none; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:705px; background-color:#d3d3d3; padding:12px; border:solid 1px #999999;"><p><span style="font-family: consolas; color: #0000ff;">&lt;</span><span style="font-family: consolas; color: #a31515;">endpoint</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">address</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">behaviorConfiguration</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">ChatServiceBehavior</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">binding</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">webHttpBinding</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">bindingConfiguration</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">SecureHttpBinding</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">contract</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">CMS.Chat.IChatService</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> /&gt;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table style="width:820px; border:none; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:705px; background-color:#d3d3d3; padding:12px; border:solid 1px #999999;"><p><span style="font-family: consolas; color: #0000ff;">&lt;</span><span style="font-family: consolas; color: #a31515;">endpoint</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">address</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">behaviorConfiguration</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">ChatServiceBehavior</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">binding</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">webHttpBinding</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">cpntract</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">CMS.Chat.IChatService</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> /&gt;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p>4. Add both HTTP and HTTPS endpoints into the <span style="font-weight: bold;">&lt;service name=CMS.Chat.ChatSupportService&gt;</span> section. Note that the HTTP endpoint is present in the file by default.</p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table style="width:820px; border:none; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:705px; background-color:#d3d3d3; padding:12px; border:solid 1px #999999;"><p><span style="font-family: consolas; color: #0000ff;">&lt;</span><span style="font-family: consolas; color: #a31515;">endpoint</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">address</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">behaviorConfiguration</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">ChatServiceBehavior</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">binding</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">webHttpBinding</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">bindingConfiguration</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">SecureHttpBinding</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">contract</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">CMS.Chat.IChatSupportService</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> /&gt;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table style="width:820px; border:none; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:705px; background-color:#d3d3d3; padding:12px; border:solid 1px #999999;"><p><span style="font-family: consolas; color: #0000ff;">&lt;</span><span style="font-family: consolas; color: #a31515;">endpoint</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">address</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">behaviorConfiguration</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">ChatServiceBehavior</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">binding</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">webHttpBinding</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">contract</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">CMS.Chat.IChatSupportService</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> /&gt;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p>5. Save the web.config file.</p>
+<p>&nbsp;</p>
+<p>This is the resulting part of the web.config file where you just configured Chat for both HTTP and HTTPS:</p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table style="width:820px; border:none; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:799px; background-color:#d3d3d3; padding:12px; border:solid 1px #999999;"><p><span style="font-family: consolas; color: #0000ff;">&lt;</span><span style="font-family: consolas; color: #a31515;">bindings</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">basicHttpBinding</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp;&lt;!--</span><span style="font-family: consolas; color: #008000;"> SalesForce BEGIN </span><span style="font-family: consolas; color: #0000ff;">--&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">binding</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">name</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">SalesForceBinding</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">transferMode</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">Buffered</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">security</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">mode</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">Transport</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">transport</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">clientCredentialType</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">None</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">proxyCredentialType</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">None</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">realm</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;&quot;</span><span style="font-family: consolas; color: #0000ff;"> /&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">message</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">clientCredentialType</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">UserName</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">algorithmSuite</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">Default</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> /&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp;&lt;/</span><span style="font-family: consolas; color: #a31515;">security</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp;&lt;/</span><span style="font-family: consolas; color: #a31515;">binding</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp;&lt;!--</span><span style="font-family: consolas; color: #008000;"> SalesForce END </span><span style="font-family: consolas; color: #0000ff;">--&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp;&lt;/</span><span style="font-family: consolas; color: #a31515;">basicHttpBinding</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">webHttpBinding</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">binding</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">name</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">SecureHttpBinding</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">security</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">mode</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">Transport</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> /&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp;&lt;/</span><span style="font-family: consolas; color: #a31515;">binding</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp;&lt;/</span><span style="font-family: consolas; color: #a31515;">webHttpBinding</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;">&lt;/</span><span style="font-family: consolas; color: #a31515;">bindings</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;">&lt;</span><span style="font-family: consolas; color: #a31515;">behaviors</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">endpointBehaviors</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">behavior</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">name</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">ChatServiceBehavior</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">enableWebScript</span><span style="font-family: consolas; color: #0000ff;"> /&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp;&lt;/</span><span style="font-family: consolas; color: #a31515;">behavior</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp;&lt;/</span><span style="font-family: consolas; color: #a31515;">endpointBehaviors</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;">&lt;/</span><span style="font-family: consolas; color: #a31515;">behaviors</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;">&lt;</span><span style="font-family: consolas; color: #a31515;">services</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">service</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">name</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">CMS.Chat.ChatService</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">endpoint</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">address</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">behaviorConfiguration</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">ChatServiceBehavior</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">binding</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">webHttpBinding</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">bindingConfiguration</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">SecureHttpBinding</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">contract</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">CMS.Chat.IChatService</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> /&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">endpoint</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">address</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">behaviorConfiguration</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">ChatServiceBehavior</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">binding</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">webHttpBinding</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">contract</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">CMS.Chat.IChatService</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> /&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp;&lt;/</span><span style="font-family: consolas; color: #a31515;">service</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">service</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">name</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">CMS.Chat.ChatSupportService</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">endpoint</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">address</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">behaviorConfiguration</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">ChatServiceBehavior</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">binding</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">webHttpBinding</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">bindingConfiguration</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">SecureHttpBinding</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">contract</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">CMS.Chat.IChatService</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> /&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">endpoint</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">address</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">behaviorConfiguration</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">ChatServiceBehavior</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">binding</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">webHttpBinding</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">contract</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">CMS.Chat.IChatSupportService</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> /&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp;&lt;/</span><span style="font-family: consolas; color: #a31515;">service</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;">&lt;/</span><span style="font-family: consolas; color: #a31515;">services</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p>&nbsp;</p>
+<h2 class="p_Heading2"><a id="process_designer_https"></a><span class="f_Heading2">Configuring WCF to Process designer under HTTPS only</span></h2>
+<p>&nbsp;</p>
+<p>1. Open the Automation web.config file located in ~/CMSModules/Automation.</p>
+<p>&nbsp;</p>
+<p>2. Create a binding based on <span style="font-style: italic;">WebHttpBinding</span> in the <span style="font-weight: bold;">&lt;system.serviceModel&gt; - &lt;bindings&gt;</span> section<span style="font-family: consolas; color: #0000ff;">.</span></p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table style="width:820px; border:none; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:705px; background-color:#d3d3d3; padding:12px; border:solid 1px #999999;"><p><span style="font-family: consolas; color: #a31515;">&lt;webHttpBinding</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &lt;</span><span style="font-family: consolas; color: #a31515;">binding</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">name</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">SecureHttpBinding</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">security</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">mode</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">Transport</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> /&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &lt;/</span><span style="font-family: consolas; color: #a31515;">binding</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;">&lt;/</span><span style="font-family: consolas; color: #a31515;">webHttpBinding</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p>&nbsp;</p>
+<p>3. Add an HTTPS endpoint for the newly created binding into the <span style="font-weight: bold;">&lt;service name=&quot;CMS.WebServices.AutomationDesignerService&quot;&gt;</span> section.</p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table style="width:820px; border:none; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:705px; background-color:#d3d3d3; padding:12px; border:solid 1px #999999;"><p><span style="font-family: consolas; color: #0000ff;">&lt;</span><span style="font-family: consolas; color: #a31515;">endpoint</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">address</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">behaviorConfiguration</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">AutomationDesignerServiceBehavior</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">binding</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">webHttpBinding</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">bindingConfiguration</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">SecureHttpBinding</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">contract</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">CMS.WebServices.IWorkflowDesignerService</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> /&gt;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p>&nbsp;</p>
+<p>4. Remove the HTTP endpoint from the <span style="font-weight: bold;">&lt;service name=&quot;CMS.WebServices.AutomationDesignerService&quot;&gt;</span> section.</p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table style="width:820px; border:none; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:705px; background-color:#d3d3d3; padding:12px; border:solid 1px #999999;"><p><span style="font-family: consolas; color: #0000ff;">&lt;</span><span style="font-family: consolas; color: #a31515;">endpoint</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">address</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">behaviorConfiguration</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">AutomationDesignerServiceBehavior</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">binding</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">webHttpBinding</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">contract</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">CMS.WebServices.IWorkflowDesignerService</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> /&gt;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p>&nbsp;</p>
+<p>5. Save the web.config file.</p>
+<p>&nbsp;</p>
+<p>This is the resulting web.config file where you just configured Process designer and Workflow designer for HTTPS:</p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table style="width:820px; border:none; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:705px; background-color:#d3d3d3; padding:12px; border:solid 1px #999999;"><p><span style="font-family: consolas; color: #0000ff;">&lt;?</span><span style="font-family: consolas; color: #a31515;">xml</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">version</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">1.0</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">?&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;">&lt;</span><span style="font-family: consolas; color: #a31515;">configuration</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">system.serviceModel</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">bindings</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">webHttpBinding</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">binding</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">name</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">SecureHttpBinding</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">security</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">mode</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">Transport</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> /&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp; &nbsp;&lt;/</span><span style="font-family: consolas; color: #a31515;">binding</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp;&lt;/</span><span style="font-family: consolas; color: #a31515;">webHttpBinding</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp;&lt;/</span><span style="font-family: consolas; color: #a31515;">bindings</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">behaviors</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">endpointBehaviors</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">behavior</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">name</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">AutomationDesignerServiceBehavior</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">enableWebScript</span><span style="font-family: consolas; color: #0000ff;"> /&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp; &nbsp;&lt;/</span><span style="font-family: consolas; color: #a31515;">behavior</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp;&lt;/</span><span style="font-family: consolas; color: #a31515;">endpointBehaviors</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp;&lt;/</span><span style="font-family: consolas; color: #a31515;">behaviors</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">services</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">service</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">name</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">CMS.WebServices.AutomationDesignerService</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">endpoint</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">address</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">behaviorConfiguration</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">AutomationDesignerServiceBehavior</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">binding</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">webHttpBinding</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">bindingConfiguration</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">SecureHttpBinding</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">contract</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">CMS.WebServices.IWorkflowDesignerService</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> /&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp;&lt;/</span><span style="font-family: consolas; color: #a31515;">service</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp;&lt;/</span><span style="font-family: consolas; color: #a31515;">services</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp;&lt;/</span><span style="font-family: consolas; color: #a31515;">system.serviceModel</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">system.web</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">authorization</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">deny</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">users</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">?</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">/&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp;&lt;/</span><span style="font-family: consolas; color: #a31515;">authorization</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp;&lt;/</span><span style="font-family: consolas; color: #a31515;">system.web</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">location</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">path</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">Services/AutomationDesignerService.svc</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">system.web</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">authorization</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">deny</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">users</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">?</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">/&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/</span><span style="font-family: consolas; color: #a31515;">authorization</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp;&lt;/</span><span style="font-family: consolas; color: #a31515;">system.web</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp;&lt;/</span><span style="font-family: consolas; color: #a31515;">location</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;">&lt;/</span><span style="font-family: consolas; color: #a31515;">configuration</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p>&nbsp;</p>
+<h2 class="p_Heading2"><a id="process_designer_http_https"></a><span class="f_Heading2">Configuring WCF to use Process designer under both HTTP and HTTPS</span></h2>
+<p>&nbsp;</p>
+<p>1. Open the Automation web.config file located in ~/CMSModules/Automation.</p>
+<p>&nbsp;</p>
+<p>2. Create a binding based on WebHttpBinding in the <span style="font-weight: bold;">&lt;system.serviceModel&gt; - &lt;bindings&gt;</span> section<span style="font-family: consolas; color: #0000ff;">.</span></p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table style="width:820px; border:none; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:705px; background-color:#d3d3d3; padding:12px; border:solid 1px #999999;"><p><span style="font-family: consolas; color: #a31515;">&lt;webHttpBinding</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &lt;</span><span style="font-family: consolas; color: #a31515;">binding</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">name</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">SecureHttpBinding</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">security</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">mode</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">Transport</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> /&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &lt;/</span><span style="font-family: consolas; color: #a31515;">binding</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;">&lt;/</span><span style="font-family: consolas; color: #a31515;">webHttpBinding</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p>&nbsp;</p>
+<p>3. Add both HTTP and HTTPS endpoints into the <span style="font-weight: bold;">&lt;service name=&quot;CMS.WebServices.AutomationDesignerService&quot;&gt;</span> section. Note that the HTTP endpoint is present in the file by default.</p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table style="width:820px; border:none; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:705px; background-color:#d3d3d3; padding:12px; border:solid 1px #999999;"><p><span style="font-family: consolas; color: #0000ff;">&lt;</span><span style="font-family: consolas; color: #a31515;">endpoint</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">address</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">behaviorConfiguration</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">AutomationDesignerServiceBehavior</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">binding</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">webHttpBinding</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">bindingConfiguration</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">SecureHttpBinding</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">contract</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">CMS.WebServices.IWorkflowDesignerService</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> /&gt;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table style="width:820px; border:none; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:705px; background-color:#d3d3d3; padding:12px; border:solid 1px #999999;"><p><span style="font-family: consolas; color: #0000ff;">&lt;</span><span style="font-family: consolas; color: #a31515;">endpoint</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">address</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">behaviorConfiguration</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">AutomationDesignerServiceBehavior</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">binding</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">webHttpBinding</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">contract</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">CMS.WebServices.IWorkflowDesignerService</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> /&gt;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p>&nbsp;</p>
+<p>4. Save the web.config file.</p>
+<p>&nbsp;</p>
+<p>This is the resulting web.config file where you just configured Process designer and Workflow designer for both HTTP and HTTPS:</p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table style="width:820px; border:none; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:705px; background-color:#d3d3d3; padding:12px; border:solid 1px #999999;"><p><span style="font-family: consolas; color: #0000ff;">&lt;?</span><span style="font-family: consolas; color: #a31515;">xml</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">version</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">1.0</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">?&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;">&lt;</span><span style="font-family: consolas; color: #a31515;">configuration</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">system.serviceModel</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">bindings</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">webHttpBinding</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">binding</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">name</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">SecureHttpBinding</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">security</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">mode</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">Transport</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> /&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp; &nbsp;&lt;/</span><span style="font-family: consolas; color: #a31515;">binding</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp;&lt;/</span><span style="font-family: consolas; color: #a31515;">webHttpBinding</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp;&lt;/</span><span style="font-family: consolas; color: #a31515;">bindings</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">behaviors</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">endpointBehaviors</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">behavior</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">name</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">AutomationDesignerServiceBehavior</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">enableWebScript</span><span style="font-family: consolas; color: #0000ff;"> /&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp; &nbsp;&lt;/</span><span style="font-family: consolas; color: #a31515;">behavior</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp;&lt;/</span><span style="font-family: consolas; color: #a31515;">endpointBehaviors</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp;&lt;/</span><span style="font-family: consolas; color: #a31515;">behaviors</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">services</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">service</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">name</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">CMS.WebServices.AutomationDesignerService</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">endpoint</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">address</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">behaviorConfiguration</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">AutomationDesignerServiceBehavior</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">binding</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">webHttpBinding</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">contract</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">CMS.WebServices.IWorkflowDesignerService</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> /&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">endpoint</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">address</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">behaviorConfiguration</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">AutomationDesignerServiceBehavior</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">binding</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">webHttpBinding</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">bindingConfiguration</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">SecureHttpBinding</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">contract</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">CMS.WebServices.IWorkflowDesignerService</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> /&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp;&lt;/</span><span style="font-family: consolas; color: #a31515;">service</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp;&lt;/</span><span style="font-family: consolas; color: #a31515;">services</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp;&lt;/</span><span style="font-family: consolas; color: #a31515;">system.serviceModel</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">system.web</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">authorization</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">deny</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">users</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">?</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">/&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp;&lt;/</span><span style="font-family: consolas; color: #a31515;">authorization</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp;&lt;/</span><span style="font-family: consolas; color: #a31515;">system.web</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">location</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">path</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">Services/AutomationDesignerService.svc</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">system.web</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">authorization</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">deny</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">users</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">?</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">/&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/</span><span style="font-family: consolas; color: #a31515;">authorization</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp;&lt;/</span><span style="font-family: consolas; color: #a31515;">system.web</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp;&lt;/</span><span style="font-family: consolas; color: #a31515;">location</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;">&lt;/</span><span style="font-family: consolas; color: #a31515;">configuration</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<h2 class="p_Heading2"><a id="workflow_designer_https"></a><span class="f_Heading2">Configuring WCF to use Workflow designer under HTTPS only</span></h2>
+<p>&nbsp;</p>
+<p>1. Open the Automation web.config file located in ~/CMSModules/Workflows.</p>
+<p>&nbsp;</p>
+<p>2. Create a binding based on <span style="font-style: italic;">WebHttpBinding</span> in the <span style="font-weight: bold;">&lt;system.serviceModel&gt; - &lt;bindings&gt;</span> section<span style="font-family: consolas; color: #0000ff;">.</span></p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table style="width:820px; border:none; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:705px; background-color:#d3d3d3; padding:12px; border:solid 1px #999999;"><p><span style="font-family: consolas; color: #a31515;">&lt;webHttpBinding</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &lt;</span><span style="font-family: consolas; color: #a31515;">binding</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">name</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">SecureHttpBinding</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">security</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">mode</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">Transport</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> /&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &lt;/</span><span style="font-family: consolas; color: #a31515;">binding</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;">&lt;/</span><span style="font-family: consolas; color: #a31515;">webHttpBinding</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p>&nbsp;</p>
+<p>3. Add an HTTPS endpoint for the newly created binding into the <span style="font-weight: bold;">&lt;service name=&quot;CMS.WebServices.AutomationDesignerService&quot;&gt;</span> section.</p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table style="width:820px; border:none; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:705px; background-color:#d3d3d3; padding:12px; border:solid 1px #999999;"><p><span style="font-family: consolas; color: #0000ff;">&lt;</span><span style="font-family: consolas; color: #a31515;">endpoint</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">address</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">behaviorConfiguration</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">WorkflowDesignerServiceBehavior</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">binding</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">webHttpBinding</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">bindingConfiguration</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">SecureHttpBinding</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">contract</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">CMS.WebServices.IWorkflowDesignerService</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> /&gt;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p>&nbsp;</p>
+<p>4. Remove the HTTP endpoint from the <span style="font-weight: bold;">&lt;service name=&quot;CMS.WebServices.AutomationDesignerService&quot;&gt;</span> section.</p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table style="width:820px; border:none; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:705px; background-color:#d3d3d3; padding:12px; border:solid 1px #999999;"><p><span style="font-family: consolas; color: #0000ff;">&lt;</span><span style="font-family: consolas; color: #a31515;">endpoint</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">address</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">behaviorConfiguration</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">WorkflowDesignerServiceBehavior</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">binding</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">webHttpBinding</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">contract</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">CMS.WebServices.IWorkflowDesignerService</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> /&gt;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p>&nbsp;</p>
+<p>5. Save the web.config file.</p>
+<p>&nbsp;</p>
+<p>This is the resulting web.config file where you just configured Process designer and Workflow designer for HTTPS:</p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table style="width:820px; border:none; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:705px; background-color:#d3d3d3; padding:12px; border:solid 1px #999999;"><p><span style="font-family: consolas; color: #0000ff;">&lt;?</span><span style="font-family: consolas; color: #a31515;">xml</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">version</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">1.0</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">?&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;">&lt;</span><span style="font-family: consolas; color: #a31515;">configuration</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">system.serviceModel</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">bindings</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">webHttpBinding</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">binding</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">name</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">SecureHttpBinding</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">security</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">mode</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">Transport</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> /&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp; &nbsp;&lt;/</span><span style="font-family: consolas; color: #a31515;">binding</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp;&lt;/</span><span style="font-family: consolas; color: #a31515;">webHttpBinding</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp;&lt;/</span><span style="font-family: consolas; color: #a31515;">bindings</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">behaviors</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">endpointBehaviors</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">behavior</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">name</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">WorkflowDesignerServiceBehavior</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">enableWebScript</span><span style="font-family: consolas; color: #0000ff;"> /&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp; &nbsp;&lt;/</span><span style="font-family: consolas; color: #a31515;">behavior</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp;&lt;/</span><span style="font-family: consolas; color: #a31515;">endpointBehaviors</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp;&lt;/</span><span style="font-family: consolas; color: #a31515;">behaviors</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">services</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">service</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">name</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">CMS.WebServices.WorkflowDesignerService</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">endpoint</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">address</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">behaviorConfiguration</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">WorkflowDesignerServiceBehavior</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">binding</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">webHttpBinding</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">bindingConfiguration</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">SecureHttpBinding</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">contract</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">CMS.WebServices.IWorkflowDesignerService</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> /&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp;&lt;/</span><span style="font-family: consolas; color: #a31515;">service</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp;&lt;/</span><span style="font-family: consolas; color: #a31515;">services</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp;&lt;/</span><span style="font-family: consolas; color: #a31515;">system.serviceModel</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">system.web</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">authorization</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">deny</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">users</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">?</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">/&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp;&lt;/</span><span style="font-family: consolas; color: #a31515;">authorization</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp;&lt;/</span><span style="font-family: consolas; color: #a31515;">system.web</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">location</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">path</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">Services/WorkflowDesignerService.svc</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">system.web</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">authorization</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">deny</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">users</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">?</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">/&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/</span><span style="font-family: consolas; color: #a31515;">authorization</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp;&lt;/</span><span style="font-family: consolas; color: #a31515;">system.web</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp;&lt;/</span><span style="font-family: consolas; color: #a31515;">location</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;">&lt;/</span><span style="font-family: consolas; color: #a31515;">configuration</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p>&nbsp;</p>
+<h2 class="p_Heading2"><a id="workflow_designer_http_https"></a><span class="f_Heading2">Configuring WCF to use Workflow designer under both HTTP and HTTPS</span></h2>
+<p>&nbsp;</p>
+<p>1. Open the Automation web.config file located in ~/CMSModules/Workflows.</p>
+<p>&nbsp;</p>
+<p>2. Create a binding based on WebHttpBinding in the <span style="font-weight: bold;">&lt;system.serviceModel&gt; - &lt;bindings&gt;</span> section<span style="font-family: consolas; color: #0000ff;">.</span></p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table style="width:820px; border:none; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:705px; background-color:#d3d3d3; padding:12px; border:solid 1px #999999;"><p><span style="font-family: consolas; color: #a31515;">&lt;webHttpBinding</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &lt;</span><span style="font-family: consolas; color: #a31515;">binding</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">name</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">SecureHttpBinding</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">security</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">mode</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">Transport</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> /&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &lt;/</span><span style="font-family: consolas; color: #a31515;">binding</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;">&lt;/</span><span style="font-family: consolas; color: #a31515;">webHttpBinding</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p>&nbsp;</p>
+<p>3. Add both HTTP and HTTPS endpoints into the <span style="font-weight: bold;">&lt;service name=&quot;CMS.WebServices.AutomationDesignerService&quot;&gt;</span> section. Note that the HTTP endpoint is present in the file by default.</p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table style="width:820px; border:none; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:705px; background-color:#d3d3d3; padding:12px; border:solid 1px #999999;"><p><span style="font-family: consolas; color: #0000ff;">&lt;</span><span style="font-family: consolas; color: #a31515;">endpoint</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">address</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">behaviorConfiguration</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">WorkflowDesignerServiceBehavior</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">binding</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">webHttpBinding</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">bindingConfiguration</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">SecureHttpBinding</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">contract</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">CMS.WebServices.IWorkflowDesignerService</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> /&gt;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table style="width:820px; border:none; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:705px; background-color:#d3d3d3; padding:12px; border:solid 1px #999999;"><p><span style="font-family: consolas; color: #0000ff;">&lt;</span><span style="font-family: consolas; color: #a31515;">endpoint</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">address</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">behaviorConfiguration</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">WorkflowDesignerServiceBehavior</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">binding</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">webHttpBinding</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">contract</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">CMS.WebServices.IWorkflowDesignerService</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> /&gt;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p>&nbsp;</p>
+<p>4. Save the web.config file.</p>
+<p>&nbsp;</p>
+<p>This is the resulting web.config file where you just configured Process designer and Workflow designer for both HTTP and HTTPS:</p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table style="width:820px; border:none; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:705px; background-color:#d3d3d3; padding:12px; border:solid 1px #999999;"><p><span style="font-family: consolas; color: #0000ff;">&lt;?</span><span style="font-family: consolas; color: #a31515;">xml</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">version</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">1.0</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">?&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;">&lt;</span><span style="font-family: consolas; color: #a31515;">configuration</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">system.serviceModel</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">bindings</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">webHttpBinding</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">binding</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">name</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">SecureHttpBinding</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">security</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">mode</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">Transport</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> /&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp; &nbsp;&lt;/</span><span style="font-family: consolas; color: #a31515;">binding</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp;&lt;/</span><span style="font-family: consolas; color: #a31515;">webHttpBinding</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp;&lt;/</span><span style="font-family: consolas; color: #a31515;">bindings</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">behaviors</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">endpointBehaviors</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">behavior</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">name</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">WorkflowDesignerServiceBehavior</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">enableWebScript</span><span style="font-family: consolas; color: #0000ff;"> /&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp; &nbsp;&lt;/</span><span style="font-family: consolas; color: #a31515;">behavior</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp;&lt;/</span><span style="font-family: consolas; color: #a31515;">endpointBehaviors</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp;&lt;/</span><span style="font-family: consolas; color: #a31515;">behaviors</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">services</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">service</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">name</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">CMS.WebServices.WorkflowDesignerService</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">endpoint</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">address</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">behaviorConfiguration</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">WorkflowDesignerServiceBehavior</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">binding</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">webHttpBinding</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">contract</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">CMS.WebServices.IWorkflowDesignerService</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> /&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">endpoint</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">address</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">behaviorConfiguration</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">WorkflowDesignerServiceBehavior</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">binding</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">webHttpBinding</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">bindingConfiguration</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">SecureHttpBinding</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">contract</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">CMS.WebServices.IWorkflowDesignerService</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;"> /&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp;&lt;/</span><span style="font-family: consolas; color: #a31515;">service</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp;&lt;/</span><span style="font-family: consolas; color: #a31515;">services</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp;&lt;/</span><span style="font-family: consolas; color: #a31515;">system.serviceModel</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">system.web</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">authorization</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">deny</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">users</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">?</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">/&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp;&lt;/</span><span style="font-family: consolas; color: #a31515;">authorization</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp;&lt;/</span><span style="font-family: consolas; color: #a31515;">system.web</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">location</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">path</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">Services/WorkflowDesignerService.svc</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">system.web</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">authorization</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;</span><span style="font-family: consolas; color: #a31515;">deny</span><span style="font-family: consolas; color: #0000ff;"> </span><span style="font-family: consolas; color: #ff0000;">users</span><span style="font-family: consolas; color: #0000ff;">=</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">?</span><span style="font-family: consolas;">&quot;</span><span style="font-family: consolas; color: #0000ff;">/&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/</span><span style="font-family: consolas; color: #a31515;">authorization</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp; &nbsp; &nbsp;&lt;/</span><span style="font-family: consolas; color: #a31515;">system.web</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;"> &nbsp;&lt;/</span><span style="font-family: consolas; color: #a31515;">location</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+<p><span style="font-family: consolas; color: #0000ff;">&lt;/</span><span style="font-family: consolas; color: #a31515;">configuration</span><span style="font-family: consolas; color: #0000ff;">&gt;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p>&nbsp;</p>
+
+<!--ZOOMSTOP--> 
+
+
+<noscript>
+<p class="help-url"><b>Help URL:&nbsp;</b><a href="http://devnet.kentico.com/docs/7_0/contexthelp/index.html?configuring_wcf_https.htm" target="_top" title="Right-click to copy the URL of this help topic">
+http://devnet.kentico.com/docs/7_0/contexthelp/index.html?configuring_wcf_https.htm</a> 
+</p>
+</noscript>
+<script type="text/javascript">
+var richPL = (true && (navigator.platform.indexOf("iPad") === -1 && navigator.platform.indexOf("iPhone") === -1) && isFlash());
+writePermalink(richPL,"Generate a link to this topic for copying or bookmark it in your browser","Generate Permalink or Bookmark Topic","Right-click to copy the URL of this help topic","Help URL:");
+</script>
+
+
+</div></div>   
+</body>
+</html>
+
+

@@ -1,0 +1,498 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Content management</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta name="description" content="Content management" />
+   <meta name="copyright" content="© 2012 Kentico Software" /> 
+   <meta http-equiv="Cache-control" content="no-cache" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   
+   
+   <link type="text/css" href="custom.css" rel="stylesheet" /> 
+   
+   
+   
+   <style type="text/css">
+     body { margin: 0px; background: #FFFFFF; }
+   </style>
+   
+   <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+   <script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+   
+   
+   <script type="text/javascript" src="nsh.js"></script>
+   
+   
+   
+   
+   <script type="text/javascript" src="ZeroClipboard.js"></script>
+   <script type="text/javascript">
+var permalinkData = ["index.html",true,"http://devnet.kentico.com/docs/7_0/contexthelp/index.html?settings_contentmanagement.htm","Content management","Sorry, your browser can't bookmark pages using this function. Copy the permalink, then press Ctrl+D to bookmark the topic with the permalink.","This page is stored locally. You can only bookmark pages on a web server!"];
+
+var togTocButton = "";
+$(document).ready(function() {
+  chromeBugCheck("workaround",false);
+   
+   });
+</script>
+
+
+
+
+
+<!-- Adjustment for IE -->
+<!--[if lte IE 8]>
+<style type="text/css">
+.topichead { padding-right: 0; }
+#autoTocWrapper ul li { padding: 3px 3px 4px 3px;}
+</style>
+<![endif]-->
+<!--[if lte IE 7]>
+<style type="text/css">
+#innerdiv {height: 100%;}
+</style>
+<![endif]-->
+   
+
+
+
+         
+   <!-- CSS set with project variables and local attributes --> 
+   <style type="text/css" media="screen"> 
+   body { background: #fff; } 
+   #breadcrumbs {width: 100%; background-color: white; border-bottom: 1px solid #000; padding: 0px 0px 5px 15px;
+   margin: 3px 0; font-size: 8pt; color: #000;}
+   #breadcrumbs a { color: #000; text-decoration: none;}
+   #breadcrumbs a:visited { color: #000; }
+   #breadcrumbs a:hover { color: #098ae2; text-decoration: none; }
+   .help-url { font-size: 10pt; font-family: Arial, Verdana, Helvetica, sans-serif; 
+               color: #1f84e8; text-align: center; margin: 5px 20px 10px 0px; 
+               padding-top: 14px; border-top: 1px solid #000;}
+   .help-url a { color: #098ae2; text-decoration: none; }
+   .help-url a:visited { color: #098ae2; }
+   .help-url a:hover { color: #098ae2; text-decoration: underline; }
+   .highlight {background: #ffff40;}
+   .breadhead {padding: 5px 0px 0px 0px !important;}   
+   
+   #idcontent {overflow:auto !important;}
+    
+   #innerdiv   
+   {   
+   padding-left: 5px;
+   }
+   
+
+   
+
+   </style> 
+
+<!-- Adjustment for IE -->
+<!--[if lte IE 8]>
+<style type="text/css">
+.topichead { padding-right: 0; }
+   
+</style>
+<![endif]-->
+ <script type="text/javascript">
+// Initialize the page 
+addEvent(window, "load", nsrInit);
+addEvent(window, "load", doResize);
+addEvent(window, "resize", doResize);
+addEvent(window, "load", toggleJump);
+
+</script>
+
+<script type="text/javascript">
+function mailFB_custom() {
+var headerText = unQuot("Feedback on: Kentico CMS 7.0 Context Help - Content management".replace('&nbsp;',''));
+var fb1 = "mailto:" + escape('Kentico Support Team <support@kentico.com>') + "?subject=" + headerText;
+var titlePath = unQuot("CMS Site Manager &gt; Settings &gt; Content &gt; Content management /");
+var fb2 = "&body=Ref:%20" + titlePath + "%20ID:%20settings_contentmanagement%0A%0D%0A%0D" + unQuot("Dear Support Staff,") + "%0A%0D%0A%0D";
+var fb = fb1 + fb2;
+document.location.href=fb;
+}
+</script>
+
+        
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "settings_contentmanagement.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head> 
+
+<body>
+<!--ZOOMSTOP-->
+
+<div id="printheader">
+<span id="printtitle">Kentico CMS 7.0 Context Help</span><br />
+<h1 class="p_Heading1"><span class="f_Heading1">Content management</span></h1>
+</div>
+<div id="idheader" style="border-bottom:1px solid #000;margin:0px 0px;"> 
+<table id="breadtable" border="0" cellspacing="0" cellpadding="0" width="100%"> 
+  <tr >
+  <td align="left" class="breadhead" >
+       <p id="breadcrumbs"><a href="mode_selection.htm"
+        onmouseover="document.images.main.src='home_h.gif'" 
+        onmouseout="document.images.main.src='home.gif'">
+        <img name="main" src="home.gif" border="0" alt="Home topic" title="Home topic" /></a> 
+        
+        CMS Site Manager &gt; <a href="settings_settings.htm">Settings</a> &gt; <a href="settings_content.htm">Content</a>:</p> 
+  </td>
+  </tr>
+</table>
+<table width="99%" border="0" cellspacing="0" cellpadding="0" id="headtable"> 
+
+<!-- Script version of NavHeader -->
+  <tr id="scriptNavHead" valign="middle" style="height: auto;"> 
+    <td align="left" class="topichead" style="padding-left: 15px;"> 
+    <h1 class="p_Heading1"><span class="f_Heading1">Content management</span></h1>
+
+    </td>
+    <td align="center" width="20" class="idnav" valign="bottom">
+     <a href="settings_content.htm"
+        onmouseover="document.images.prev.src='button_prev_h.gif'" 
+        onmouseout="document.images.prev.src='button_prev.gif'">
+        <img name="prev" src="button_prev.gif" border="0" alt="Previous topic" title="Previous topic" /></a>
+     
+   </td>
+   
+   <td align="center" width="20" class="idnav" valign="bottom">
+     <a href="settings_contentmedialibraries.htm"
+        onmouseover="document.images.next.src='button_next_h.gif'" 
+        onmouseout="document.images.next.src='button_next.gif'"><img name="next" src="button_next.gif" border="0" alt="Next topic" title="Next topic" /></a>
+        
+   </td>
+
+   
+   
+   
+   
+   
+
+     
+   <td id="print-button" align="center" width="20" class="idnav" valign="bottom">
+     <a href="javascript: print();" 
+     onmouseover="document.images.printbutton.src='print_h.gif'" 
+     onmouseout="document.images.printbutton.src='print.gif'"><img name="printbutton" border="0" alt="Print this topic" title="Print this topic" src="print.gif" /></a>
+   </td>  
+     
+     
+
+  
+   <td id="mail-feedback" align="center" width="20" class="idnav" valign="bottom">
+   <a href="#"
+        onclick='mailFB_custom();'
+        onmouseover="document.images.feedback.src='mail_h.gif'" 
+        onmouseout="document.images.feedback.src='mail.gif'"><img name="feedback" src="mail.gif" border="0" alt="Mail us feedback on this topic!" title="Mail us feedback on this topic!" /></a>
+   </td>
+   
+   <td width="4">&nbsp;</td>
+  </tr>
+<!-- End script navheader version -->
+
+<!-- NoScript version of navheader -->
+
+  <tr id="noScriptNavHead" valign="middle" style="height: auto;"> 
+    <td align="left" class="topichead"> 
+    <h1 class="p_Heading1"><span class="f_Heading1">Content management</span></h1>
+
+    </td>
+    <td align="center" width="20" class="idnav" valign="bottom">
+     <a href="settings_content.htm">
+        <img src="button_prev.gif" border="0" alt="Previous topic" title="Previous topic" /></a>
+     
+   </td>
+   
+   <td align="center" width="20" class="idnav" valign="bottom">
+     <a href="settings_contentmedialibraries.htm">
+        <img src="button_next.gif" border="0" alt="Next topic" title="Next topic" /></a>
+        
+   </td>
+   
+   
+   
+  
+   
+
+     
+     
+   <td align="center" width="20" class="idnav" valign="bottom">
+   <img border="0" alt="JavaScript is required for the print function" title="JavaScript is required for the print function" src="print_d.gif" />
+   </td>
+     
+     
+   
+   <td align="center" width="20" class="idnav" valign="bottom">
+   <a href="mailto:Kentico%20Support%20Team%20<support@kentico.com>?subject=Documentation%20feedback&body=Ref%20ID:%20settings_contentmanagement%0D%0D"><img src="mail.gif" border="0" alt="Mail us feedback on this topic!" title="Mail us feedback on this topic!" /></a>
+   </td>
+   
+   <td width="4">&nbsp;</td>
+  </tr>
+
+<!-- End noscript navheader version -->
+  </table>
+
+<div id="autoTocWrapper"></div></div> 
+<div id="permalink" class="popups">
+<table cellspacing="3" cellpadding="0" width="100%">
+   <tr>
+   <td align="left">
+   <div id="permalink_box" style="position:relative">
+   <input type="button" id="selectPermalink" value="Copy Permalink" />
+   </div>
+   </td>
+   <td align="center">
+   <input type="button" id="selectPermalink" value="Bookmark Topic" onClick="PLclick('bookmark',window.permalinkData);" />
+   </td>
+   <td align="right">
+   <input type="button" id="closePermalink" value="Close Dialog Box"onClick="PLclick('close','');" />
+   </td>
+   </tr>
+   <tr>
+   <td colspan="3" align="center">
+    <textarea id="plinkBox" readonly="readonly"></textarea>
+   </td>
+   </tr>
+</table>
+
+
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!--ZOOMRESTART-->
+<p style="text-align: justify;">On this page, you can edit the following settings related to content management and workflows:</p>
+<p style="text-align: justify;">&nbsp;</p>
+<div style="text-align: justify; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table style="width:820px; border:none; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td colspan="2" style="vertical-align:middle; width:568px; padding:5px; border:solid 1px #000000;"><p><span style="font-weight: bold;">General</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:228px; padding:5px; border:solid 1px #000000;"><p>New document order</p>
+</td>
+<td style="vertical-align:top; width:568px; padding:5px; border:solid 1px #000000;"><p>Specifies the default order used when inserting new documents. Possible values are:</p>
+<p>&nbsp;</p>
+<p style="text-align: left; padding: 0px 0px 0px 13px; margin: 0px 0px 0px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span style="font-weight: bold;">First</span> - new documents are added to the first position on the given level of the content tree.</p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 0px 0px 0px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span style="font-weight: bold;">Last</span> - documents are added to the end of the given content tree level.</p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 0px 0px 0px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span style="font-weight: bold;">Alphabetical</span> - documents are inserted to the appropriate alphabetical position based on their name.</p></td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:228px; padding:5px; border:solid 1px #000000;"><p>Prompt to save changes on exit</p>
+</td>
+<td style="vertical-align:top; width:568px; padding:5px; border:solid 1px #000000;"><p>If enabled, users are notified when leaving a modified page in editing mode with unsaved changes.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:228px; padding:5px; border:solid 1px #000000;"><p>Allow global categories</p>
+</td>
+<td style="vertical-align:top; width:568px; padding:5px; border:solid 1px #000000;"><p>Indicates if the use of global categories, i.e. categories shared across all websites in the system, should be enabled for the website selected in the Site drop-down list (or for all websites that inherit the setting if <span style="font-style: italic;">(global)</span> is selected in the drop-down list).</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:228px; padding:5px; border:solid 1px #000000;"><p>Use live URL for editing modes</p>
+</td>
+<td style="vertical-align:top; width:568px; padding:5px; border:solid 1px #000000;"><p>If enabled, the live URL and view are used for documents in editing mode (i.e. when working with documents on the <span style="font-style: italic;">Page</span> tab of CMS Desk). Only enable this setting when using the <a href="http://devnet.kentico.com/docs/7_0/devguide/mvc_overview.htm" target="_blank" class="weblink">MVC development model</a>.</p>
+<p>&nbsp;</p>
+<p>This is not necessary if your documents are based on <span style="font-style: italic;">MVC</span> type page templates, which automatically use the MVC view in editing mode.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:228px; padding:5px; border:solid 1px #000000;"><p>Enable wireframing</p>
+</td>
+<td style="vertical-align:top; width:568px; padding:5px; border:solid 1px #000000;"><p>Allows users to create and edit <a href="http://devnet.kentico.com/docs/7_0/devguide/wireframing_overview.htm" target="_blank" class="weblink">wireframe</a> schematics in the <span style="font-weight: bold;">CMS Desk -&gt; Content</span> interface. Wireframes provide a way to easily plan out the structure, design and functionality of the website's documents directly in the content tree.</p>
+<p>&nbsp;</p>
+<p>The system displays all existing wireframes even if this setting is disabled. However, users cannot make any modifications or create new wireframes.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td colspan="2" style="vertical-align:middle; width:568px; padding:5px; border:solid 1px #000000;"><p><span style="font-weight: bold;">On-site editing</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:228px; padding:5px; border:solid 1px #000000;"><p>Enable On-site editing</p>
+</td>
+<td style="vertical-align:top; width:568px; padding:5px; border:solid 1px #000000;"><p>Indicates whether the website's pages should be editable through a special interface directly on the live site. <a href="http://devnet.kentico.com/docs/7_0/devguide/onsite_editing_overview.htm" target="_blank" class="weblink">On-site editing</a> allows authorized users to make changes to page content, manage documents and even configure the properties of web parts.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:228px; padding:5px; border:solid 1px #000000;"><p>Enable On-site editing button</p>
+</td>
+<td style="vertical-align:top; width:568px; padding:5px; border:solid 1px #000000;"><p>When enabled along with on-site editing, the <span style="font-weight: bold;">Edit page</span> button is displayed in the corner of pages on the live site for users who are authorized as editors. Clicking the button opens the on‑site editing interface.</p>
+<p>&nbsp;</p>
+<p>If you do not wish to use this button, users can alternatively access on-site editing mode through links provided by the <a href="http://devnet.kentico.com/docs/7_0/webparts/EditDocumentLink_overview.htm" target="_blank" class="weblink">Edit document link</a> or <a href="http://devnet.kentico.com/docs/7_0/webparts/AdminActions_overview.htm" target="_blank" class="weblink">Admin actions</a> web part, or by manually going to the following URL: <span style="font-style: italic;">http://&lt;domain&gt;/&lt;virtual directory&gt;/cmsedit</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td colspan="2" style="vertical-align:middle; width:568px; padding:5px; border:solid 1px #000000;"><p><span style="font-weight: bold;">Mobile development</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:228px; padding:5px; border:solid 1px #000000;"><p>Enable device profiles</p>
+</td>
+<td style="vertical-align:top; width:568px; padding:5px; border:solid 1px #000000;"><p>Enable this setting if you want to use <a href="http://devnet.kentico.com/docs/7_0/devguide/mobile_creating_device_profiles.htm" target="_blank" class="weblink">device profiles</a> on the website. Device profiles allow you to customize the layout and content of pages for specific devices. The system automatically assigns a device profile to each visitor according to the parameters of the device they use to view the page.</p>
+<p>&nbsp;</p>
+<p>You can define device profiles in <span style="font-weight: bold;">Site Manager -&gt; Development -&gt; Device profiles</span>.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:228px; padding:5px; border:solid 1px #000000;"><p>Enable layout mapping</p>
+</td>
+<td style="vertical-align:top; width:568px; padding:5px; border:solid 1px #000000;"><p>If enabled, pages with shared page layouts automatically use replacement layouts according to the <a href="http://devnet.kentico.com/docs/7_0/devguide/mobile_mapping_shared_layouts.htm" target="_blank" class="weblink">layout mappings</a> set for individual device profiles.</p>
+<p>&nbsp;</p>
+<p>To configure the layout mappings of a device profile, edit it in <span style="font-weight: bold;">Site Manager -&gt; Development -&gt; Device profiles</span> and open the <span style="font-weight: bold;">Layout mapping</span> tab.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:228px; padding:5px; border:solid 1px #000000;"><p>Resize images according to device profile</p>
+</td>
+<td style="vertical-align:top; width:568px; padding:5px; border:solid 1px #000000;"><p>If enabled, the system automatically resizes images to match individual device profiles. This reduces the maximum side size of images to the larger of the dimensions set for the current device profile (<span style="font-style: italic;">Preview width</span> or <span style="font-style: italic;">Preview height</span>).</p>
+<p>&nbsp;</p>
+<p>The following restrictions apply:</p>
+<p>&nbsp;</p>
+<p style="text-align: left; padding: 0px 0px 0px 13px; margin: 0px 0px 0px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>The resizing does not affect images that have an explicitly specified width or height.</p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 0px 0px 0px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Images must be loaded through one of the Kentico CMS system pages (getattachment, getmetafile, getmedia etc). This feature cannot resize images that use web links or direct paths in their source.</p><p>&nbsp;</p>
+<p>You can disable the resizing for specific images by adding the <span style="font-style: italic;">resizemode=&quot;force&quot;</span> parameter to the image source URL.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td colspan="2" style="vertical-align:middle; width:568px; padding:5px; border:solid 1px #000000;"><p><span style="font-weight: bold;">Content management UI</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:228px; padding:5px; border:solid 1px #000000;"><p>Check document permissions</p>
+</td>
+<td style="vertical-align:top; width:568px; padding:5px; border:solid 1px #000000;"><p>If enabled, only documents for which the current user has the <span style="font-weight: bold;">Read</span> permission are displayed in the content tree (in <span style="font-weight: bold;">CMS Desk -&gt; Content, </span>in document listings and in various dialogs where the content tree is displayed).</p>
+<p>&nbsp;</p>
+<p>In case that a user doesn't have the <span style="font-weight: bold;">Read</span> permissions for any document at all, a message is displayed instead of the content tree, saying that they are not authorized to modify any document. If a user has the <span style="font-weight: bold;">Read</span> permission for a child document but not for its parent, the child document is not displayed as well.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:228px; padding:5px; border:solid 1px #000000;"><p>Max tree nodes</p>
+</td>
+<td style="vertical-align:top; width:568px; padding:5px; border:solid 1px #000000;"><p>The maximum number of documents that will be displayed under an unfolded document in the tree view. If the number of documents exceeds the maximum number, a link that takes you to the document list is displayed after the allowed number of records.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:228px; padding:5px; border:solid 1px #000000;"><p>Display linked icon</p>
+</td>
+<td style="vertical-align:top; width:568px; padding:5px; border:solid 1px #000000;"><p>Indicates if the <img src="linkeddoc_flag.png" width="9" height="13" alt="LinkedDoc_Flag" style="border:none" /><span class="f_ImageCaption"> </span>icon should be displayed in the content tree next to linked documents. Additional information about status icons can be found in <a href="http://devnet.kentico.com/docs/7_0/devguide/document_status_icons.htm" target="_blank" class="weblink">Developer's Guide -&gt; Content management -&gt; Editing content -&gt; Document status icons</a>.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:228px; padding:5px; border:solid 1px #000000;"><p>Display not translated icon</p>
+</td>
+<td style="vertical-align:top; width:568px; padding:5px; border:solid 1px #000000;"><p>Indicates if the <img src="nottranslated_flag.png" width="9" height="13" alt="NotTranslated_flag" style="border:none" /> icon should be displayed in the content tree next to documents that are not translated in the current culture.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:228px; padding:5px; border:solid 1px #000000;"><p>Display redirected icon</p>
+</td>
+<td style="vertical-align:top; width:568px; padding:5px; border:solid 1px #000000;"><p>Indicates if the <img src="redirected_flag.png" width="9" height="13" alt="Redirected_flag" style="border:none" /> icon should be displayed in the content tree next to documents that have some redirection configured in <span style="font-weight: bold;">Properties -&gt; Navigation -&gt; URL redirection</span>.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:228px; padding:5px; border:solid 1px #000000;"><p>Display published icon</p>
+</td>
+<td style="vertical-align:top; width:568px; padding:5px; border:solid 1px #000000;"><p>Indicates if the <img src="published_flag.png" width="9" height="13" alt="Published_flag" style="border:none" /> icon should be displayed in the content tree next to documents that are currently published. By enabling this option, the <img src="notpublishedfuture_flag.png" width="9" height="13" alt="NotPublishedFuture_flag" style="border:none" /> and <img src="publishedfuture_flag.png" width="9" height="13" alt="PublishedFuture_flag" style="border:none" /> icons are also enabled.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:228px; padding:5px; border:solid 1px #000000;"><p>Display version not published icon</p>
+</td>
+<td style="vertical-align:top; width:568px; padding:5px; border:solid 1px #000000;"><p>Indicates if the <img src="versionnotpublished_flag.png" width="9" height="13" alt="VersionNotPublished_flag" style="border:none" /> icon should be displayed in the content tree next to documents that already have a published version, but whose latest version is not published yet. By enabling this option, the <img src="publishedfuture_flag.png" width="9" height="13" alt="PublishedFuture_flag" style="border:none" /> icon is also enabled. </p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:228px; padding:5px; border:solid 1px #000000;"><p>Display not published icon</p>
+</td>
+<td style="vertical-align:top; width:568px; padding:5px; border:solid 1px #000000;"><p>Indicates if the <img src="notpublished_flag.png" width="9" height="13" alt="NotPublished_flag" style="border:none" /> icon should be displayed in the content tree next to documents that have not yet been published (and also have no previously published version). By enabling this option, the <img src="notpublishedfuture_flag.png" width="9" height="13" alt="NotPublishedFuture_flag" style="border:none" /> icon is also enabled. </p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:228px; padding:5px; border:solid 1px #000000;"><p>Display archived icon</p>
+</td>
+<td style="vertical-align:top; width:568px; padding:5px; border:solid 1px #000000;"><p>Indicates if the <img src="archived_flag.png" width="9" height="13" alt="Archived_flag" style="border:none" /> icon should be displayed in the content tree next to documents that are archived.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:228px; padding:5px; border:solid 1px #000000;"><p>Display checked out icon</p>
+</td>
+<td style="vertical-align:top; width:568px; padding:5px; border:solid 1px #000000;"><p>Indicates if the <img src="checkedout_flag.png" width="9" height="13" alt="CheckedOut_flag" style="border:none" /> icon should be displayed in the content tree next do documents that are checked out.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:228px; padding:5px; border:solid 1px #000000;"><p>Display wireframe icon</p>
+</td>
+<td style="vertical-align:top; width:568px; padding:5px; border:solid 1px #000000;"><p>Indicates if the <img src="wireframe_flag.png" width="9" height="13" alt="Wireframe_flag" style="border:none" /> icon should be displayed in the content tree next to documents that contain a <a href="http://devnet.kentico.com/docs/7_0/devguide/wireframing_overview.htm" target="_blank" class="weblink">wireframe</a> definition. It is not added to dedicated wireframing documents of the <span style="font-style: italic;">CMS.Wireframe</span> type, which users can already identify by their main document type icon.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td colspan="2" style="vertical-align:middle; width:568px; padding:5px; border:solid 1px #000000;"><p><span style="font-weight: bold;">Workflow</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:228px; padding:5px; border:solid 1px #000000;"><p>Send workflow e-mails</p>
+</td>
+<td style="vertical-align:top; width:568px; padding:5px; border:solid 1px #000000;"><p>Indicates if the workflow e-mail notification should be sent.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:228px; padding:5px; border:solid 1px #000000;"><p>Send workflow e-mails from</p>
+</td>
+<td style="vertical-align:top; width:568px; padding:5px; border:solid 1px #000000;"><p>E-mail address of the workflow e-mails sender. You can also use the <span style="font-style: italic;">Someone&lt;some@something.com&gt; </span>format.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:228px; padding:5px; border:solid 1px #000000;"><p>Use automatic version numbering</p>
+</td>
+<td style="vertical-align:top; width:568px; padding:5px; border:solid 1px #000000;"><p>If you use workflow without content locking, automatic version numbering will be used by default.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:228px; padding:5px; border:solid 1px #000000;"><p>Use check-in/check-out</p>
+</td>
+<td style="vertical-align:top; width:568px; padding:5px; border:solid 1px #000000;"><p>Indicates if content locking (check-in/check-out) should be used with document types that use versioning. Content locking allows content editors to lock the document for editing so that the other editors cannot modify the document at the same time.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:228px; padding:5px; border:solid 1px #000000;"><p>Version history length</p>
+</td>
+<td style="vertical-align:top; width:568px; padding:5px; border:solid 1px #000000;"><p>Specifies maximum number of versions in the document history. If the number of versions exceeds the specified maximum number, the older versions are destroyed.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:228px; padding:5px; border:solid 1px #000000;"><p>Allow permanent preview links</p>
+</td>
+<td style="vertical-align:top; width:568px; padding:5px; border:solid 1px #000000;"><p>Indicates if document preview links remain usable even if document workflow cycle is restarted (when documents in <span style="font-weight: bold;">Published/Archived</span> workflow step are switched to the <span style="font-weight: bold;">Edit</span> step). If disabled, new preview links are generated in this situation and the original ones are no longer usable.</p>
+</td>
+</tr>
+</table>
+</div>
+<p>&nbsp;</p>
+
+<!--ZOOMSTOP--> 
+
+
+<noscript>
+<p class="help-url"><b>Help URL:&nbsp;</b><a href="http://devnet.kentico.com/docs/7_0/contexthelp/index.html?settings_contentmanagement.htm" target="_top" title="Right-click to copy the URL of this help topic">
+http://devnet.kentico.com/docs/7_0/contexthelp/index.html?settings_contentmanagement.htm</a> 
+</p>
+</noscript>
+<script type="text/javascript">
+var richPL = (true && (navigator.platform.indexOf("iPad") === -1 && navigator.platform.indexOf("iPhone") === -1) && isFlash());
+writePermalink(richPL,"Generate a link to this topic for copying or bookmark it in your browser","Generate Permalink or Bookmark Topic","Right-click to copy the URL of this help topic","Help URL:");
+</script>
+
+
+</div></div>   
+</body>
+</html>
+
+

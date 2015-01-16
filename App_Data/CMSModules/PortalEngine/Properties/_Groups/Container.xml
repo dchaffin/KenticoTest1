@@ -1,0 +1,15 @@
+﻿<category name="Web part container" />
+
+<field column="Container" fieldcaption="Web part container" visible="true" columntype="text" fieldtype="usercontrol" allowempty="true" columnsize="200" fielddescription="{$documentation.webpartproperties.container$}" guid="5b74cfb7-4e8b-4570-a4cb-c6fa20f2171e">
+  <settings>
+    <controlname>selectcontainer</controlname>
+  </settings>
+</field>
+<field column="ContainerTitle" fieldcaption="Container title" visible="true" columntype="text" fieldtype="textbox" allowempty="true" columnsize="200" fielddescription="{$documentation.webpartproperties.containertitle$}" guid="8249d912-0dd7-49db-9fab-8ccc42548f94" />
+<field column="ContainerCSSClass" fieldcaption="Container CSS class" visible="true" columntype="text" fieldtype="textbox" allowempty="true" columnsize="200" fielddescription="{$documentation.webpartproperties.containercssclass$}" guid="8249d912-0dd7-49db-1cab-2aaa42548f94" />
+<field column="ContainerCustomContent" fieldcaption="Container custom content" visible="true" columntype="longtext" fieldtype="usercontrol" allowempty="true" fielddescription="{$documentation.webpartproperties.containercustomcontent$}" guid="80e99300-3501-4942-a554-ca545fda3e5a">
+  <settings>
+    <controlname>largetextarea</controlname>
+  </settings>
+</field>
+<field column="ContainerHideOnSubPages" fieldcaption="Hide container on subpages" visible="true" columntype="boolean" fieldtype="checkbox" allowempty="false" fielddescription="{$documentation.webpartproperties.containerhideonsub$}" guid="f11c3f83-83c6-4b8e-80ae-d073acdd93fb" />

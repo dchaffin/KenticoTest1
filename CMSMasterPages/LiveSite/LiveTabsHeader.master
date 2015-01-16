@@ -1,0 +1,53 @@
+<%@ Master Language="C#" AutoEventWireup="true" Inherits="CMSMasterPages_LiveSite_LiveTabsHeader"
+    CodeFile="LiveTabsHeader.master.cs" %>
+
+<%@ Register Src="~/CMSAdminControls/UI/PageElements/HeaderActions.ascx" TagName="HeaderActions"
+    TagPrefix="cms" %>
+<%@ Register Src="~/CMSAdminControls/UI/PageElements/PageTitle.ascx" TagName="PageTitle"
+    TagPrefix="cms" %>
+<%@ Register TagPrefix="cms" Namespace="CMS.UIControls" Assembly="CMS.UIControls" %>
+<%@ Register Src="~/CMSAdminControls/UI/PageElements/FrameResizer.ascx" TagName="FrameResizer"
+    TagPrefix="cms" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server" enableviewstate="false">
+    <title>TabsHeaderMasterPage</title>
+    <style type="text/css">
+        body
+        {
+            margin: 0px;
+            padding: 0px;
+            height: 100%;
+        }
+    </style>
+</head>
+<body class="<%=mBodyClass%>">
+    <form id="form1" runat="server">
+    <asp:PlaceHolder runat="server" ID="plcManager" />
+    <cms:frameresizer id="frmResizer" runat="server" minsize="6, *" vertical="True" />
+    <asp:Panel runat="server" ID="pnlBody" CssClass="TabsPageHeader">
+        <asp:Panel runat="server" ID="pnlTitle" CssClass="PageHeader" EnableViewState="false">
+            <cms:pagetitle id="titleElem" runat="server" shortid="t" />
+        </asp:Panel>
+        <asp:Panel ID="pnlActions" runat="server" CssClass="PageHeaderLine" EnableViewState="false">
+            <cms:headeractions id="actionsElem" runat="server" shortid="a" />
+            <asp:ContentPlaceHolder runat="server" ID="plcActions" />
+            <asp:ContentPlaceHolder ID="plcContent" runat="server" />
+        </asp:Panel>
+        <asp:Panel runat="server" ID="pnlTabsContainer" CssClass="TabsPageTabs" EnableViewState="false">
+            <asp:Panel runat="server" ID="pnlLeft" CssClass="TabsLeft">
+                &nbsp;
+            </asp:Panel>
+            <asp:Panel runat="server" ID="pnlTabs" CssClass="TabsTabs">
+                <asp:Panel runat="server" ID="pnlWhite" CssClass="TabsWhite">
+                    <cms:uitabs id="tabControlElem" runat="server" useclientscript="true" shortid="t" />
+                </asp:Panel>
+            </asp:Panel>
+            <asp:Panel runat="server" ID="pnlRight" CssClass="TabsRight">
+                &nbsp;
+            </asp:Panel>
+        </asp:Panel>
+    </asp:Panel>
+    </form>
+</body>
+</html>

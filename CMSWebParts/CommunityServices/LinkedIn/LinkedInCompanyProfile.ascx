@@ -1,0 +1,2 @@
+<%@ Control Language="C#" AutoEventWireup="true" Inherits="CMSWebParts_CommunityServices_LinkedIn_LinkedInCompanyProfile" CodeFile="~/CMSWebParts/CommunityServices/LinkedIn/LinkedInCompanyProfile.ascx.cs" %>
+<asp:Literal runat="server" ID="ltlPluginCode" EnableViewState="false" />

@@ -1,0 +1,471 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Chat</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta name="description" content="Chat" />
+   <meta name="copyright" content="© 2012 Kentico Software" /> 
+   <meta http-equiv="Cache-control" content="no-cache" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   
+   
+   <link type="text/css" href="custom.css" rel="stylesheet" /> 
+   
+   
+   
+   <style type="text/css">
+     body { margin: 0px; background: #FFFFFF; }
+   </style>
+   
+   <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+   <script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+   
+   
+   <script type="text/javascript" src="nsh.js"></script>
+   
+   
+   
+   
+   <script type="text/javascript" src="ZeroClipboard.js"></script>
+   <script type="text/javascript">
+var permalinkData = ["index.html",true,"http://devnet.kentico.com/docs/7_0/contexthelp/index.html?settings_chat.htm","Chat","Sorry, your browser can't bookmark pages using this function. Copy the permalink, then press Ctrl+D to bookmark the topic with the permalink.","This page is stored locally. You can only bookmark pages on a web server!"];
+
+var togTocButton = "";
+$(document).ready(function() {
+  chromeBugCheck("workaround",false);
+   
+   });
+</script>
+
+
+
+
+
+<!-- Adjustment for IE -->
+<!--[if lte IE 8]>
+<style type="text/css">
+.topichead { padding-right: 0; }
+#autoTocWrapper ul li { padding: 3px 3px 4px 3px;}
+</style>
+<![endif]-->
+<!--[if lte IE 7]>
+<style type="text/css">
+#innerdiv {height: 100%;}
+</style>
+<![endif]-->
+   
+
+
+
+         
+   <!-- CSS set with project variables and local attributes --> 
+   <style type="text/css" media="screen"> 
+   body { background: #fff; } 
+   #breadcrumbs {width: 100%; background-color: white; border-bottom: 1px solid #000; padding: 0px 0px 5px 15px;
+   margin: 3px 0; font-size: 8pt; color: #000;}
+   #breadcrumbs a { color: #000; text-decoration: none;}
+   #breadcrumbs a:visited { color: #000; }
+   #breadcrumbs a:hover { color: #098ae2; text-decoration: none; }
+   .help-url { font-size: 10pt; font-family: Arial, Verdana, Helvetica, sans-serif; 
+               color: #1f84e8; text-align: center; margin: 5px 20px 10px 0px; 
+               padding-top: 14px; border-top: 1px solid #000;}
+   .help-url a { color: #098ae2; text-decoration: none; }
+   .help-url a:visited { color: #098ae2; }
+   .help-url a:hover { color: #098ae2; text-decoration: underline; }
+   .highlight {background: #ffff40;}
+   .breadhead {padding: 5px 0px 0px 0px !important;}   
+   
+   #idcontent {overflow:auto !important;}
+    
+   #innerdiv   
+   {   
+   padding-left: 5px;
+   }
+   
+
+   
+
+   </style> 
+
+<!-- Adjustment for IE -->
+<!--[if lte IE 8]>
+<style type="text/css">
+.topichead { padding-right: 0; }
+   
+</style>
+<![endif]-->
+ <script type="text/javascript">
+// Initialize the page 
+addEvent(window, "load", nsrInit);
+addEvent(window, "load", doResize);
+addEvent(window, "resize", doResize);
+addEvent(window, "load", toggleJump);
+
+</script>
+
+<script type="text/javascript">
+function mailFB_custom() {
+var headerText = unQuot("Feedback on: Kentico CMS 7.0 Context Help - Chat".replace('&nbsp;',''));
+var fb1 = "mailto:" + escape('Kentico Support Team <support@kentico.com>') + "?subject=" + headerText;
+var titlePath = unQuot("CMS Site Manager &gt; Settings &gt; Community &gt; Chat /");
+var fb2 = "&body=Ref:%20" + titlePath + "%20ID:%20settings_chat%0A%0D%0A%0D" + unQuot("Dear Support Staff,") + "%0A%0D%0A%0D";
+var fb = fb1 + fb2;
+document.location.href=fb;
+}
+</script>
+
+        
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "settings_chat.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head> 
+
+<body>
+<!--ZOOMSTOP-->
+
+<div id="printheader">
+<span id="printtitle">Kentico CMS 7.0 Context Help</span><br />
+<h1 class="p_Heading1"><span class="f_Heading1">Chat</span></h1>
+</div>
+<div id="idheader" style="border-bottom:1px solid #000;margin:0px 0px;"> 
+<table id="breadtable" border="0" cellspacing="0" cellpadding="0" width="100%"> 
+  <tr >
+  <td align="left" class="breadhead" >
+       <p id="breadcrumbs"><a href="mode_selection.htm"
+        onmouseover="document.images.main.src='home_h.gif'" 
+        onmouseout="document.images.main.src='home.gif'">
+        <img name="main" src="home.gif" border="0" alt="Home topic" title="Home topic" /></a> 
+        
+        CMS Site Manager &gt; <a href="settings_settings.htm">Settings</a> &gt; <a href="settings_community.htm">Community</a>:</p> 
+  </td>
+  </tr>
+</table>
+<table width="99%" border="0" cellspacing="0" cellpadding="0" id="headtable"> 
+
+<!-- Script version of NavHeader -->
+  <tr id="scriptNavHead" valign="middle" style="height: auto;"> 
+    <td align="left" class="topichead" style="padding-left: 15px;"> 
+    <h1 class="p_Heading1"><span class="f_Heading1">Chat</span></h1>
+
+    </td>
+    <td align="center" width="20" class="idnav" valign="bottom">
+     <a href="settings_communityavatars.htm"
+        onmouseover="document.images.prev.src='button_prev_h.gif'" 
+        onmouseout="document.images.prev.src='button_prev.gif'">
+        <img name="prev" src="button_prev.gif" border="0" alt="Previous topic" title="Previous topic" /></a>
+     
+   </td>
+   
+   <td align="center" width="20" class="idnav" valign="bottom">
+     <a href="settings_chatwebparts.htm"
+        onmouseover="document.images.next.src='button_next_h.gif'" 
+        onmouseout="document.images.next.src='button_next.gif'"><img name="next" src="button_next.gif" border="0" alt="Next topic" title="Next topic" /></a>
+        
+   </td>
+
+   
+   
+   
+   
+   
+
+     
+   <td id="print-button" align="center" width="20" class="idnav" valign="bottom">
+     <a href="javascript: print();" 
+     onmouseover="document.images.printbutton.src='print_h.gif'" 
+     onmouseout="document.images.printbutton.src='print.gif'"><img name="printbutton" border="0" alt="Print this topic" title="Print this topic" src="print.gif" /></a>
+   </td>  
+     
+     
+
+  
+   <td id="mail-feedback" align="center" width="20" class="idnav" valign="bottom">
+   <a href="#"
+        onclick='mailFB_custom();'
+        onmouseover="document.images.feedback.src='mail_h.gif'" 
+        onmouseout="document.images.feedback.src='mail.gif'"><img name="feedback" src="mail.gif" border="0" alt="Mail us feedback on this topic!" title="Mail us feedback on this topic!" /></a>
+   </td>
+   
+   <td width="4">&nbsp;</td>
+  </tr>
+<!-- End script navheader version -->
+
+<!-- NoScript version of navheader -->
+
+  <tr id="noScriptNavHead" valign="middle" style="height: auto;"> 
+    <td align="left" class="topichead"> 
+    <h1 class="p_Heading1"><span class="f_Heading1">Chat</span></h1>
+
+    </td>
+    <td align="center" width="20" class="idnav" valign="bottom">
+     <a href="settings_communityavatars.htm">
+        <img src="button_prev.gif" border="0" alt="Previous topic" title="Previous topic" /></a>
+     
+   </td>
+   
+   <td align="center" width="20" class="idnav" valign="bottom">
+     <a href="settings_chatwebparts.htm">
+        <img src="button_next.gif" border="0" alt="Next topic" title="Next topic" /></a>
+        
+   </td>
+   
+   
+   
+  
+   
+
+     
+     
+   <td align="center" width="20" class="idnav" valign="bottom">
+   <img border="0" alt="JavaScript is required for the print function" title="JavaScript is required for the print function" src="print_d.gif" />
+   </td>
+     
+     
+   
+   <td align="center" width="20" class="idnav" valign="bottom">
+   <a href="mailto:Kentico%20Support%20Team%20<support@kentico.com>?subject=Documentation%20feedback&body=Ref%20ID:%20settings_chat%0D%0D"><img src="mail.gif" border="0" alt="Mail us feedback on this topic!" title="Mail us feedback on this topic!" /></a>
+   </td>
+   
+   <td width="4">&nbsp;</td>
+  </tr>
+
+<!-- End noscript navheader version -->
+  </table>
+
+<div id="autoTocWrapper"></div></div> 
+<div id="permalink" class="popups">
+<table cellspacing="3" cellpadding="0" width="100%">
+   <tr>
+   <td align="left">
+   <div id="permalink_box" style="position:relative">
+   <input type="button" id="selectPermalink" value="Copy Permalink" />
+   </div>
+   </td>
+   <td align="center">
+   <input type="button" id="selectPermalink" value="Bookmark Topic" onClick="PLclick('bookmark',window.permalinkData);" />
+   </td>
+   <td align="right">
+   <input type="button" id="closePermalink" value="Close Dialog Box"onClick="PLclick('close','');" />
+   </td>
+   </tr>
+   <tr>
+   <td colspan="3" align="center">
+    <textarea id="plinkBox" readonly="readonly"></textarea>
+   </td>
+   </tr>
+</table>
+
+
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!--ZOOMRESTART-->
+<div style="text-align: justify; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table style="width:820px; border:none; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td colspan="2" style="vertical-align:top; width:71%; padding:5px; border:solid 1px #000000;"><p><span style="font-weight: bold;">General</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:29%; padding:5px; border:solid 1px #000000;"><p>Allow anonymous users</p>
+</td>
+<td style="vertical-align:top; width:71%; padding:5px; border:solid 1px #000000;"><p>Indicates if users can enter chat without being logged in on the website.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:29%; padding:5px; border:solid 1px #000000;"><p>Guest prefix</p>
+</td>
+<td style="vertical-align:top; width:71%; padding:5px; border:solid 1px #000000;"><p>Text that will be appended with a number and used as the user name for anonymous users.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:29%; padding:5px; border:solid 1px #000000;"><p>Force unique nicknames for anonymous users</p>
+</td>
+<td style="vertical-align:top; width:71%; padding:5px; border:solid 1px #000000;"><p>If checked, nicknames of anonymous users on chat will have to be unique. Nicknames of registered users always have to be unique.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:29%; padding:5px; border:solid 1px #000000;"><p>Maximum length of message</p>
+</td>
+<td style="vertical-align:top; width:71%; padding:5px; border:solid 1px #000000;"><p>Maximum number of characters in a message.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:29%; padding:5px; border:solid 1px #000000;"><p>Convert URLs to HTML anchors in messages</p>
+</td>
+<td style="vertical-align:top; width:71%; padding:5px; border:solid 1px #000000;"><p>If checked, URLs in messages will be converted to clickable HTML anchors.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:29%; padding:5px; border:solid 1px #000000;"><p>Enable BBCode in messages</p>
+</td>
+<td style="vertical-align:top; width:71%; padding:5px; border:solid 1px #000000;"><p>Indicates if BBCode tags will be allowed and resolved in chat messages. This setting affects the Room messages web part (resolving) and the Send message web part (inserting BBCode tags). If BBCode is enabled globally, you can still disable it for a specific web part in its settings.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:29%; padding:5px; border:solid 1px #000000;"><p>Convert emoticons to images</p>
+</td>
+<td style="vertical-align:top; width:71%; padding:5px; border:solid 1px #000000;"><p>Indicates if emoticons will be converted to images in messages.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td colspan="2" style="vertical-align:top; width:71%; padding:5px; border:solid 1px #000000;"><p><span style="font-weight: bold;">Support chat</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:29%; padding:5px; border:solid 1px #000000;"><p>Enable support chat</p>
+</td>
+<td style="vertical-align:top; width:71%; padding:5px; border:solid 1px #000000;"><p>Indicates if support chat is enabled in Site Manager and CMS Desk.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:29%; padding:5px; border:solid 1px #000000;"><p>Send support messages to this e-mail address</p>
+</td>
+<td style="vertical-align:top; width:71%; padding:5px; border:solid 1px #000000;"><p>Messages sent in support chat when no support person is on-line will be sent to this e-mail address.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td colspan="2" style="vertical-align:top; width:71%; padding:5px; border:solid 1px #000000;"><p><span style="font-weight: bold;">Timeout settings</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:29%; padding:5px; border:solid 1px #000000;"><p>Room ping interval (seconds)</p>
+</td>
+<td style="vertical-align:top; width:71%; padding:5px; border:solid 1px #000000;"><p>Defines how often room related web parts will update their content (messages, users in the room, etc.). The ping interval is the time in seconds between two requests to the server. If you are experiencing performance issues with chat, consider setting this number to a higher value.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:29%; padding:5px; border:solid 1px #000000;"><p>Global ping interval (seconds)</p>
+</td>
+<td style="vertical-align:top; width:71%; padding:5px; border:solid 1px #000000;"><p>Defines how often global chat web parts will update their content (on-line users, available rooms and notifications). The ping interval is the time in seconds between requests for new data to the server. If you are experiencing performance issues with chat, consider setting this number to a higher value.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:29%; padding:5px; border:solid 1px #000000;"><p>Kick lasting time (seconds)</p>
+</td>
+<td style="vertical-align:top; width:71%; padding:5px; border:solid 1px #000000;"><p>Defines how long a kicked user will not be able to join the room she was kicked from.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:29%; padding:5px; border:solid 1px #000000;"><p>Log out user when inactive for more than (seconds)</p>
+</td>
+<td style="vertical-align:top; width:71%; padding:5px; border:solid 1px #000000;"><p>Defines how long a chat user can be inactive, i.e., not send any request to the server, before the system logs her out. This can happen if the user's internet connection has gone down or she closed the chat window.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:29%; padding:5px; border:solid 1px #000000;"><p>Log out support engineer when inactive for more than (seconds)</p>
+</td>
+<td style="vertical-align:top; width:71%; padding:5px; border:solid 1px #000000;"><p>Defines how long a support person can be inactive, i.e., not send any request to the server, before the system logs her out. This can happen if the user's internet connection has gone down or she closed the chat window.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:29%; padding:5px; border:solid 1px #000000;"><p>Release room taken by support when not pinging for more than (seconds)</p>
+</td>
+<td style="vertical-align:top; width:71%; padding:5px; border:solid 1px #000000;"><p>Time of inactivity needed to release a room taken by a support person. After this time passes, the room will appear as available to other supporters.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:29%; padding:5px; border:solid 1px #000000;"><p>Delete chat history older than (days)</p>
+</td>
+<td style="vertical-align:top; width:71%; padding:5px; border:solid 1px #000000;"><p>Messages, rooms and chat users will be deleted after the number of days specified in this setting. Records will be deleted acording to these rules: All messages written earlier than the time specified will be deleted. All rooms will be deleted, which don't have any messages in them, no one has access to them and were created earlier than the time specified. All users will be deleted, who are anonymous, have not written any message and haven't been on-line for the specified time.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td colspan="2" style="vertical-align:top; width:71%; padding:5px; border:solid 1px #000000;"><p><span style="font-weight: bold;">Default paths</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:29%; padding:5px; border:solid 1px #000000;"><p>Default redirection path - enter chat action</p>
+</td>
+<td style="vertical-align:top; width:71%; padding:5px; border:solid 1px #000000;"><p>When this setting has a value, users will be redirected to the given path after they enter chat. Specified web part setting will override this global setting.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:29%; padding:5px; border:solid 1px #000000;"><p>Default redirection path - leave chat action</p>
+</td>
+<td style="vertical-align:top; width:71%; padding:5px; border:solid 1px #000000;"><p>When this setting has a value, users will be redirected to the given path after they leave chat. Specified web part setting will override this global setting.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:29%; padding:5px; border:solid 1px #000000;"><p>Default redirection path - join room action</p>
+</td>
+<td style="vertical-align:top; width:71%; padding:5px; border:solid 1px #000000;"><p>When this setting has a value, users will be redirected to the given path after they join a chat room. Specified web part setting will override this global setting.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:29%; padding:5px; border:solid 1px #000000;"><p>Default redirection path - leave room action</p>
+</td>
+<td style="vertical-align:top; width:71%; padding:5px; border:solid 1px #000000;"><p>When this setting has a value, users will be redirected to the given path after they leave a chat room. Specified web part setting will override this global setting.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:29%; padding:5px; border:solid 1px #000000;"><p>Chat room popup window URL</p>
+</td>
+<td style="vertical-align:top; width:71%; padding:5px; border:solid 1px #000000;"><p>URL of the window that is opened as a chat room pop-up (for support chat or one-on-one chat).</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td colspan="2" style="vertical-align:top; width:71%; padding:5px; border:solid 1px #000000;"><p><span style="font-weight: bold;">Flood protection</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:29%; padding:5px; border:solid 1px #000000;"><p>Enable flood protection</p>
+</td>
+<td style="vertical-align:top; width:71%; padding:5px; border:solid 1px #000000;"><p>Enables flood protection according to other settings in this section.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:29%; padding:5px; border:solid 1px #000000;"><p>Join room interval (seconds)</p>
+</td>
+<td style="vertical-align:top; width:71%; padding:5px; border:solid 1px #000000;"><p>Number of seconds which have to pass between two subsequent room joinings made by one chat user.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:29%; padding:5px; border:solid 1px #000000;"><p>Create room interval (seconds)</p>
+</td>
+<td style="vertical-align:top; width:71%; padding:5px; border:solid 1px #000000;"><p>Number of seconds which have to pass between two subsequent room creatings by one chat user.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:29%; padding:5px; border:solid 1px #000000;"><p>Post message interval (seconds)</p>
+</td>
+<td style="vertical-align:top; width:71%; padding:5px; border:solid 1px #000000;"><p>Number of seconds which have to pass between two messages posted by one chat user.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:29%; padding:5px; border:solid 1px #000000;"><p>Change nickname interval (seconds)</p>
+</td>
+<td style="vertical-align:top; width:71%; padding:5px; border:solid 1px #000000;"><p>Number of seconds which have to pass between two nickname changes made by one chat user.</p>
+</td>
+</tr>
+</table>
+</div>
+
+<!--ZOOMSTOP--> 
+
+
+<noscript>
+<p class="help-url"><b>Help URL:&nbsp;</b><a href="http://devnet.kentico.com/docs/7_0/contexthelp/index.html?settings_chat.htm" target="_top" title="Right-click to copy the URL of this help topic">
+http://devnet.kentico.com/docs/7_0/contexthelp/index.html?settings_chat.htm</a> 
+</p>
+</noscript>
+<script type="text/javascript">
+var richPL = (true && (navigator.platform.indexOf("iPad") === -1 && navigator.platform.indexOf("iPhone") === -1) && isFlash());
+writePermalink(richPL,"Generate a link to this topic for copying or bookmark it in your browser","Generate Permalink or Bookmark Topic","Right-click to copy the URL of this help topic","Help URL:");
+</script>
+
+
+</div></div>   
+</body>
+</html>
+
+

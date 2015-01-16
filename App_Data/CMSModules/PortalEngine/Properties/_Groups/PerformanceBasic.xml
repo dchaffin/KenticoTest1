@@ -1,0 +1,4 @@
+﻿<category name="Performance" collapsible="true" collapsedbydefault="true" />
+
+<field column="DisableViewState" fieldcaption="Disable view state" visible="true" defaultvalue="false" columntype="boolean" fieldtype="checkbox" allowempty="false" fielddescription="{$documentation.webpartproperties.disableviewstate$}" guid="ee85cfe4-7726-4b4d-80e2-e7bf2991d9d5" />
+<field column="DisableMacros" fieldcaption="Disable macros" visible="true" defaultvalue="false" columntype="boolean" fieldtype="checkbox" allowempty="false" fielddescription="{$documentation.webpartproperties.disablemacros$}" guid="ee85cfe4-7726-4b4d-80e2-e7bf2991d9d5" />

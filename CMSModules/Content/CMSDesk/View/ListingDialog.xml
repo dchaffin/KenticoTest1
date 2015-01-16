@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<grid>
+  <actions parameters="NodeID;NodeParentID">
+    <action name="view" caption="$General.View$" icon="GoToDocument.png" externalsourcename="view" />
+    <action name="edit" caption="$General.Edit$" icon="Edit.png"  externalsourcename="edit" />
+    <action name="delete" caption="$General.Delete$" icon="Delete.png" externalsourcename="delete" onclick="DeleteItem({0}, {1}); return false;" />
+    <action name="contextmenu" caption="$General.OtherActions$" icon="menu.png" contextmenu="~/CMSAdminControls/UI/UniGrid/Controls/UpDownMenu.ascx" menuparameter="{0}" externalsourcename="contextmenu" />
+  </actions>
+  <columns>
+    <column source="##ALL##" externalsourcename="documentname" sort="DocumentName" caption="$general.documentname$" wrap="false" width="100%" >
+      <filter type="text" source="DocumentName" />
+    </column>
+    <column source="ClassDisplayName" externalsourcename="classdisplayname" caption="$general.documenttype$" wrap="false" maxlength="50" >
+      <tooltip source="ClassDisplayName" externalsourcename="classdisplaynametooltip" width="0" />
+      <filter type="text" source="ClassDisplayName" />
+    </column>
+    <column source="DocumentModifiedWhen" externalsourcename="modifiedwhen" caption="$general.modified$" wrap="false">
+      <tooltip source="DocumentModifiedWhen" externalsourcename="modifiedwhentooltip" />
+    </column>
+    <column source="Published" externalsourcename="published" caption="$general.published$" wrap="false" style="text-align: center;" />
+    <column source="##ALL##" externalsourcename="documentculture" columnname="documentculture" allowsorting="false" caption="$general.languages$" wrap="false" style="text-align: center;" >
+      <filter type="custom" path="~/CMSModules/Content/Controls/Filters/DocumentCultureFilter.ascx" />
+    </column>
+  </columns>
+  <options>
+    <key name="ShowSelection" value="true" />
+    <key name="DisplayFilter" value="true" />
+  </options>
+</grid>

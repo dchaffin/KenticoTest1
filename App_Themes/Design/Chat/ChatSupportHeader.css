@@ -1,0 +1,100 @@
+﻿.ChatSupportNotificationControl .SupportNotificationBubble
+{
+    display: block;
+    width: 400px;
+    height: 38px;
+    background: url("../../../CMSPages/GetResource.ashx?image=CMSModules/CMS_Chat/bubblegradient.png") repeat-x;
+    border: solid 2px black;
+    position: absolute;
+    bottom: 3px;
+    right: 5px;
+    left: auto;
+    display: none;
+    z-index: 99;
+}
+
+.ChatSupportNotificationControl .ChatSupportError
+{
+    background: url("../../../CMSPages/GetResource.ashx?image=CMSModules/CMS_Chat/bubblegradient.png") repeat-x scroll 0 0 transparent;
+    bottom: 4px;
+    display: block;
+    padding: 2px 10px;
+    position: absolute;
+    right: 6px;
+}
+
+.ChatSupportNotificationControl .SupportNotificationBubble.Active
+{
+    background: url("../../../CMSPages/GetResource.ashx?image=CMSModules/CMS_Chat/bubblegradient_active.png") repeat-x scroll 0 0 transparent;
+}
+
+.ChatSupportNotificationControl .SupportNotificationBubble img.ChatHideBubble
+{
+    border: 1px solid #000000 !important;
+    bottom: 4px;
+    padding: 3px;
+    position: absolute;
+    right: 4px;
+    background: #666;
+}  
+
+.RTL .ChatSupportNotificationControl .SupportNotificationBubble img.ChatHideBubble
+{
+    right: auto;
+    left: 4px;
+}
+  
+.RTL .ChatSupportNotificationControl .SupportNotificationBubble
+{
+    right: auto;
+    left: 3px;
+}
+
+
+.ChatSupportNotificationControl .Btn
+{
+    cursor: pointer;
+}
+
+.ChatSupportNotificationControl .BubbleTitleDiv
+{
+    width: 375px;
+    margin-left: 5px;
+    height: 16px;
+    line-height: 16px;
+    color: #E9E9E9;
+    font-weight: bold;
+}
+
+.RTL .ChatSupportNotificationControl .BubbleTitleDiv
+{
+    margin-left: 0;
+    margin-right: 5px;
+}
+
+
+.ChatSupportNotificationControl .BubbleNewMessagesDiv
+{
+    width: 375px;
+    height: 19px;
+    margin-left: 5px;
+}
+
+.RTL .ChatSupportNotificationControl .BubbleNewMessagesDiv
+{
+    margin-left:0;
+    margin-right:5px;
+}
+
+.ChatSupportNotificationControl .BubbleNewMessagesDiv .NewMessageSelect
+{
+    width: 370px;
+    display: block;
+    height: 19px;
+}
+
+
+.ChatSupportNotificationControl .HeaderLink
+{
+   margin-right: 0px;  
+}

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<grid>
+  <actions parameters="UserID">
+    <action name="kick" caption="$usersonline.kick$" icon="Kick.png" externalsourcename="kick" confirmation="$administration.users.onlineursers.confirmkick$" />
+    <action name="undokick" caption="$usersonline.undokick$" icon="Undo.png" externalsourcename="undokick" confirmation="$administration.users.onlineursers.confirmundokick$" />
+    <action name="initiatechat" caption="$chat.initiatechat$" icon="Message.png" externalsourcename="initiatechat" />
+  </actions>
+  <columns>
+    <column source="##ALL##" caption="$general.username$" externalsourcename="formattedusername" sort="UserName" wrap="false">
+    </column>
+    <column source="FullName" caption="$general.fullname$" wrap="false">
+    </column>
+    <column source="Email" caption="$general.emailaddress$" wrap="false">
+    </column>
+    <column source="UserNickName" caption="$Unigrid.UserList.Columns.UserNickName$" wrap="false">
+    </column>
+    <column source="UserCreated" caption="$Unigrid.UserList.Columns.UserCreated$" wrap="false">
+    </column>
+    <column source="UserID" visible="false">
+      <filter type="custom" path="~/CMSModules/Membership/Controls/Users/UserFilter.ascx" />
+    </column>
+  </columns>
+  <options>
+    <key name="DisplayFilter" value="true" />
+  </options>
+</grid>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<grid>
+    <actions>
+        <action name="edit" caption="$General.Edit$" icon="Edit.png" />
+        <action name="delete" caption="$General.Delete$" icon="Delete.png" confirmation="$General.ConfirmDelete$" externalsourcename="delete" />
+        <action name="moveup" caption="$General.MoveUp$" icon="Up.png" externalsourcename="moveUp" />
+        <action name="movedown" caption="$General.MoveDown$" icon="Down.png" externalsourcename="moveDown" />
+    </actions>
+    <columns>
+        <column source="SKUName" caption="$Unigrid.ProductOptions.Name$" wrap="false" localize="true" />
+        <column source="SKUNumber" caption="$Unigrid.ProductOptions.ProductNumber$" wrap="false" />
+        <column source="##ALL##" externalsourcename="SKUPrice" caption="$Unigrid.ProductOptions.Price$" wrap="false" sort="SKUPrice" cssclass="TextRight" />
+        <column source="SKUAvailableItems" caption="$Unigrid.ProductOptions.AvailableItems$" wrap="false" />
+        <column source="SKUEnabled" externalsourcename="#yesno"  caption="$com.productedit.allowforsale$" wrap="false" />
+        <column width="100%" />
+    </columns>
+    <objecttype name="ecommerce.sku" />
+    <options>
+        <key name="DisplayFilter" value="false" />
+    </options>
+</grid>

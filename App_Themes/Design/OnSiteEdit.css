@@ -1,0 +1,735 @@
+﻿body, html
+{
+    height: auto;
+}
+
+.OnSiteToolbarSpace
+{
+    line-height: 15px;
+    min-height: 55px;
+    top: 0px;
+    left: 0px;
+}
+
+.OnSiteToolbar, .OnSiteSlider
+{
+    line-height: 15px;
+    min-height: 54px;
+    z-index: 9993;
+    color: #000000;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background: url("../../CMSPages/GetResource.ashx?image=CMSModules/CMS_PortalEngine/OnSiteEdit/toolbar_background.png") repeat scroll 0 0 #E9E9E9;
+}
+
+.OnSiteSlider, .RTL .LTR .OnSiteSlider
+{
+    display: none;
+    top: 0px;
+    left: 10px;
+    width: auto;
+    min-height: 0px;
+    border: 1px solid #000000;
+    border-top: none;
+    box-shadow: 2px 2px 8px -2px #000000;
+    text-align: center;
+    font-size: 8pt;
+    font-family: Arial;
+    text-decoration: none;
+    cursor: pointer;    
+    vertical-align: top;
+}
+
+.RTL .OnSiteSlider
+{
+    left: auto;
+    right: 10px;
+    box-shadow: -2px 2px 8px -2px #000000;
+}
+
+.OnSiteSliderButton
+{
+    padding: 5px;
+}
+
+.OnSiteSliderButton img
+{
+    height: 18px;
+    width: 18px;
+}
+
+.OnSiteSlider img
+{
+    vertical-align: top;
+}
+
+.OnSiteSliderMinimize
+{
+    border-top: 1px solid #000000;
+    background: url("../../CMSPages/GetResource.ashx?image=CMSModules/CMS_PortalEngine/OnSiteEdit/button_slider_background.png") repeat scroll bottom #424B54;
+    height: 4px;
+    padding-top: 1px;
+}
+
+.OnSiteSliderButton:hover
+{
+    background: url("../../CMSPages/GetResource.ashx?image=CMSModules/CMS_PortalEngine/OnSiteEdit/hover_background.png") repeat-x top #FFCE80;
+}
+
+.UniMenuDescription
+{
+    display: none;
+}
+
+.UniMenuContent img 
+{
+    vertical-align: top;
+}
+
+.UniMenuContent .BigButton,
+.UniMenuContent .BigButtonDisabled
+{
+    height: auto;
+    margin-left: 1px !important;
+    margin-right: 1px !important;
+}
+
+.UniMenuContent .BigButton img,
+.UniMenuContent .BigButtonDisabled img 
+{
+    border: none;
+    height: auto;
+    margin: 0px;
+}
+
+.UniMenuContent .SmallButton img, .RTL .LTR .UniMenuContent .SmallButton img
+{
+    border: none;
+    height: auto;
+    width: auto;
+    padding: 0px;
+    float: none;
+}
+
+.RTL .UniMenuContent .SmallButton img
+{
+    float: right;
+}
+
+.UniMenuContent .SmallButton a,
+.UniMenuContent .BigButton a,
+.UniMenuContent .BigButtonDisabled a
+{
+    height: auto;
+    display: block;
+    font-size: 8pt !important;
+    font-family: Arial !important;
+    font-weight: normal !important;
+    text-decoration: none !important;
+    color: #000000 !important;
+    min-width: 45px !important;
+    margin-left: 1px !important;
+    margin-right: 1px !important;
+    cursor: pointer !important;
+}
+
+.UniMenuContent .BigButton a,
+.UniMenuContent .BigButtonDisabled a
+{
+    padding: 2px 1px 2px 1px !important;
+}
+
+.UniMenuContent .BigButtonDisabled a
+{
+    color: #888888 !important;
+    cursor: default !important;
+}
+
+.UniMenuContent .SmallButton a
+{
+    padding: 0px !important;
+    white-space: nowrap;
+}
+
+.UniMenuContent .MiddleBigButton
+{
+    text-align: center;
+    font-size: 8pt !important;
+    line-height: 13px !important;
+    height: auto;
+    padding: 0px;
+}
+
+.RTL .LTR .MiddleBigButton a
+{
+    direction: ltr;
+}
+
+.RTL .MiddleBigButton a
+{
+    direction: rtl;
+}
+
+.MiddleBigButton img.OnSiteCulture
+{
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.UniMenuContent .MiddleSmallButton, .RTL .LTR .UniMenuContent .MiddleSmallButton
+{
+    line-height: 19px;
+    float: right;
+    height: 19px;
+    padding-left: 0px;
+    padding-right: 6px;
+}
+
+.RTL .UniMenuContent .MiddleSmallButton
+{
+    float: left;
+    padding-right: 0px;
+    padding-left: 6px;
+}
+
+.UniMenuContent .SubItemsArrow
+{
+    padding-top: 2px;
+}
+
+.UniMenuContent .BigButton,
+.UniMenuContent .BigButtonDisabled,
+.UniMenuContent .SmallButton
+{
+    border: solid 1px transparent;
+}
+
+
+.UniMenuContent .BigButton:hover,
+.UniMenuContent .SmallButton:hover,
+.UniMenuContent .Selected, .UniMenuContent .SelectedPermanent
+{
+    border: solid 1px #ba7b32;
+    background: url("../../CMSPages/GetResource.ashx?image=CMSModules/CMS_PortalEngine/OnSiteEdit/hover_background.png") repeat-x top #FFCE80;
+}
+
+.UniMenuContent .SmallButton:hover
+{
+    background-image: url(../../CMSPages/GetResource.ashx?image=CMSModules/CMS_PortalEngine/OnSiteEdit/hover_background.png);
+    background-position: center;
+}
+
+.ContentMenuGroupOnSiteAdmins .BigButton a
+{
+    padding-top: 1px !important;
+}
+
+.ContentMenuGroupOnSiteAdmins .SmallButton:hover,
+.ContentMenuGroupOnSiteAdmins .BigButton:hover
+{
+    padding-top: 0px !important;
+    border: 1px solid transparent !important;
+    background: none !important;
+}
+
+.ContentMenuGroupOnSiteCultures .MenuButtonImage,
+.ContentMenuGroupOnSiteDeviceProfile .MenuButtonImage
+{
+    padding: 1px;
+}
+
+.ContentMenuGroupOnSiteDeviceProfile .MenuButtonImage
+{
+    width: 16px;
+}
+
+.UniMenuContent .RightBigButton,
+.UniMenuRightBorder,
+.UniMenuLeftBorder,
+.UniMenuContent .RightSmallButton, .UniMenuContent .LeftSmallButton,
+.UniMenuContent .LeftBigButton
+{
+    height: auto;
+    width: auto;
+}
+
+.UniMenuContent .SmallButton
+{
+    line-height: normal;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+}
+
+.UniMenuContent .BigButton:hover .RightBigButton, .UniMenuContent .Selected .RightBigButton,
+.UniMenuContent .BigButton:hover .MiddleBigButton, .UniMenuContent .Selected .MiddleBigButton,
+.UniMenuContent .BigButton:hover .LeftBigButton, .UniMenuContent .Selected .LeftBigButton,
+.UniMenuContent .SmallButton:hover .LeftSmallButton, .UniMenuContent .Selected .LeftSmallButton,
+.UniMenuContent .SmallButton:hover .MiddleSmallButton, .UniMenuContent .Selected .MiddleSmallButton,
+.UniMenuContent .SmallButton:hover .RightSmallButton, .UniMenuContent .Selected .RightSmallButton
+{
+    background: none;
+}
+
+.UniMenuSeparator, .RTL .LTR .UniMenuSeparator
+{
+    float: left;
+    height: 37px;
+    width: 2px;
+    margin-top: 6px;
+    background: url("../../CMSPages/GetResource.ashx?image=CMSModules/CMS_PortalEngine/OnSiteEdit/separator.png") repeat scroll 0 0 #E9E9E9;
+}
+
+.RTL .UniMenuSeparator
+{
+    float: right;
+}
+
+.OnSiteMenuRight, .RTL .LTR .OnSiteMenuRight
+{
+    float: right;
+}
+
+.RTL .OnSiteMenuRight
+{
+    float: left;
+}
+
+.ContentMenuGroup
+{
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.UniMenuContent, .RTL .LTR .UniMenuContent
+{
+    float: left;
+    height: 45px;
+    padding: 0px;
+    padding-top: 5px;
+}
+
+.RTL .UniMenuContent
+{
+    float: right;
+}
+
+.OnSiteMenu .UIToolbar
+{
+    width: 100%;
+}
+
+.RTL .LTR .ActionButtons table
+{
+    direction: ltr;
+}
+
+.RTL .ActionButtons table
+{
+    direction: rtl;
+}
+
+.OnSiteMenuLeft
+{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.ModalBackground, .modalBackground
+{
+    z-index: 9998 !important;
+    background-color: #888888;
+    filter: alpha(opacity=70);
+    opacity: 0.7;
+}
+
+
+.ContentMenuGroup, .RTL .LTR .ContentMenuGroup, 
+.UniMenuSeparator, .RTL .LTR .UniMenuSeparator
+{
+    float: left;
+}
+
+.RTL .ContentMenuGroup, .RTL .UniMenuSeparator
+{
+    float: right;
+}
+
+.ContentMenuGroupOnSiteAdmins, .RTL .LTR .ContentMenuGroupOnSiteAdmins,
+.ContentMenuGroupOnSitebasic, .RTL .LTR .ContentMenuGroupOnSitebasic,
+.UniMenuSeparatorOnSitebasic, .RTL .LTR .UniMenuSeparatorOnSitebasic
+{
+    float: right;
+}
+
+.RTL .ContentMenuGroupOnSiteAdmins, .RTL .ContentMenuGroupOnSitebasic, .RTL .UniMenuSeparatorOnSitebasic
+{
+    float: left;
+}
+
+.ContentMenuGroupOnSiteAdmins .UniMenuContent
+{
+    width: 115px;
+}
+
+.BigCMSDeskButton .UniMenuContent
+{
+    width: auto !important;
+}
+
+.UniMenuSeparatorOnSiteAdmins
+{
+    display: none;
+}
+
+.EditableImageEdit img
+{
+    background: url("../../CMSPages/GetResource.ashx?image=Design/Backgrounds/ImageBackground.png");
+}
+
+.EditableImageEdit .ImageSelectorHeader
+{
+    position: relative;
+}
+
+.EditableTextEdit
+{
+    border: none !important;
+    overflow: visible;
+}
+
+.EditableTextTextBox
+{
+    border: 1px solid #CCCCCC !important;
+}
+
+.EditableTextContainer
+{
+    padding: 5px;
+}
+
+.cke_skin_kentico .cke_maximized .cke_wrapper
+{
+    background-image: none;
+}
+
+.cke_skin_kentico .cke_contents
+{
+    margin: 0px !important;
+}
+
+.OnSiteHighlightContainer
+{
+    display: none;
+    border: none;
+    width: 0px;
+    height: 0px;
+    top: 0px;
+    left: 0px;
+}
+
+.OnSiteWebPartBegin .OnSiteWebPartEnd
+{
+    height: 0px !important;
+    width: 0px !important;
+    background: none !important;
+    border: none !important;
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+/* Edit text page -> display CKEditor footer */
+.ModalDialogFooter > div
+{
+    z-index: 10000;
+}
+
+.ModalDialogContent
+{
+    height: auto !important;
+}
+
+.OnSiteFloatRight, .RTL .LTR .OnSiteFloatRight
+{
+    float: right;
+}
+
+.RTL .OnSiteFloatRight
+{
+    float: left;
+}
+
+/* Warning message under modal dialog */
+.OnSiteEdit .AdvancedLabel,
+.OnSiteEdit .AdvancedLabel.Succ,
+.OnSiteEdit .AdvancedLabel.Error,
+.OnSiteEdit .AdvancedLabel.Warn
+{
+    z-index: 9997 !important;
+    color: #000000 !important;
+    font-size: 12px !important;
+    font-family: Arial !important;
+}
+
+.AdvancedLabel p,
+.AdvancedLabel.Succ p,
+.AdvancedLabel.Error p,
+.AdvancedLabel.Warn p
+{
+    color: #000000;
+    font-size: 12px;
+    font-family: Arial;
+}
+
+/* Update progress */
+.UP 
+{
+    z-index: 31001;
+}
+
+.OnSiteUPBg
+{
+    display: none;
+    position: absolute;
+    z-index: 31000;
+    width: 100%;
+    height: 100%;
+    background-color: #888888;
+    filter: alpha(opacity=70);
+    opacity: 0.7;
+}
+
+/* Editable web part default text */
+.OEEmptyEditableWebPart
+{
+    font-size: 12px !important;
+    font-family: Arial;
+    font-weight: normal;
+    text-decoration: none;
+    color: #888888;
+    background-color: #f5f5f5;
+    border: 1px solid #e5e5e5;
+    padding: 5px;
+    margin: 0px;
+    display: inline-block;
+}
+
+/* Highlighting */
+.OnSiteHighlight
+{
+    background-color: #ffffff;
+    border-left: 1px dashed #000000;
+    border-top: 1px dashed #000000;
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    z-index: 9991;
+}
+
+.OnSiteMenuTable, .RTL .LTR .OnSiteMenuTable
+{
+    padding: 1px;
+    z-index: 9992;
+    font-family: Arial;
+    font-size: 13px;
+    text-align: left;
+    display: table;
+    cursor: default;
+}
+
+.RTL .OnSiteMenuTable
+{
+    text-align: right;
+}
+
+.OnSiteHighlight.OnSiteMenuTable
+{
+    background: url("../../CMSPages/GetResource.ashx?image=CMSModules/CMS_PortalEngine/OnSiteEdit/webpart_background.png") repeat-x #F4990A;
+    box-shadow: none;
+    padding: 0px !important;
+    border: 1px solid #414a54;
+    font-weight: bold;
+    height: auto;
+    line-height: 0px;
+    width: auto;
+}
+
+.OnSiteHighlight.OnSiteMenuTable:hover
+{
+    z-index: 9993;
+}
+
+.OnSiteMenu .ContextMenu
+{
+    border-width: 0px !important;
+}
+
+.UniMenuContextMenu .Item .Name,
+.OnSiteHighlight .Name
+{
+    vertical-align: middle;
+    white-space: nowrap;
+    line-height: 22px !important;
+}
+
+.OnSiteHiddenButton
+{
+    display: none;
+}
+
+.OnSiteHiddenButton .UniMenuContextMenu .Item .Name
+{
+    line-height: 24px !important;
+}
+
+.UniMenuContextMenu .Icon,
+.UniMenuContextMenu .Name
+{
+    float: left;
+}
+
+.UniMenuContextMenu .ActionIcon,
+.UniMenuContextMenu .IconRight
+{
+    float: right;
+}
+
+.OnSiteHighlight .Icon,
+.OnSiteHighlight .ActionIcon,
+.OnSiteHighlight .Name
+{
+    display: table-cell;
+}
+
+.UniMenuContextMenu .Name,
+.OnSiteHighlight .Name
+{
+    padding-bottom: 1px;
+    padding-left: 6px;
+    padding-right: 6px;
+    min-width: 100px;
+}
+
+/* UniMenu - Sub context menu*/
+.SubMenuItems,
+.ContextMenuContainer
+{
+    max-height: 467px;
+}
+
+.UniMenuContextMenu .Item, .RTL .LTR .UniMenuContextMenu .Item
+{
+    border: 1px solid transparent !important;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    direction: ltr;
+    text-align: left;
+}
+
+.RTL .UniMenuContextMenu .Item
+{
+    direction: rtl;
+}
+
+.OnSiteHiddenButton .Item
+{
+    cursor: default;
+}
+
+.UniMenuContextMenu .Icon
+{
+    padding-top: 2px;
+}
+
+.UniMenuContextMenu .Icon img,
+.UniMenuContextMenu .ActionIcon img,
+.OnSiteHighlight .Icon img,
+.OnSiteHighlight .ActionIcon img
+{
+    width: 16px;
+    height: 16px;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.UniMenuContextMenu .ActionIcon img, .RTL .LTR .UniMenuContextMenu .ActionIcon img
+{
+    padding: 5px;
+}
+
+.OnSiteHighlight .ActionIcon img
+{
+    padding: 3px;
+}
+
+.UniMenuContextMenu .Item:hover, .RTL .LTR .UniMenuContextMenu .Item:hover,
+.UniMenuContextMenu .ActionIcon img:hover,
+.OnSiteMenuTable .ActionIcon img:hover
+{
+    border: 1px solid #ba7b32 !important;
+    border-top: 1px solid #FFCD84 !important;
+    border-left: 1px solid #FFCD84 !important;
+    background: url("../../CMSPages/GetResource.ashx?image=CMSModules/CMS_PortalEngine/OnSiteEdit/hover_background.png") repeat-x 0px -12px #FFCE80 !important;
+}
+
+/* Override settings from DesignMode.css */
+.IE9 .PortalContextMenu .ItemPadding,
+.IE9 .PortalContextMenu .ItemPadding:hover,
+.IE9 .PortalContextMenu .ItemSelected .ItemPadding
+{
+    line-height: 22px !important;
+    padding: 2px 3px 3px 5px !important;
+}
+
+.IE9 .PortalContextMenu .Item .Name,
+.IE9 .PortalContextMenu .ItemSelected .Name,
+.IE9 .PortalContextMenu .ItemLast .Name,
+.IE9 .PortalContextMenu .Item .NameInactive,
+.IE9 .PortalContextMenu .ItemLast .NameInactive
+{
+    line-height: 22px !important;
+    top: 1px;
+}
+
+/*# Modal dialogs #*/
+
+.UIPopupDialog
+{
+    padding: 0px;
+    background-color: white;
+}
+
+.hidden-dialog-overlay
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99999;
+}
+        
+.ui-dialog
+{
+    border: 1px solid #888888;
+    box-shadow: 0px 0px 8px 2px #888888;
+    background-color: white;
+}
+    
+.ui-dialog .ui-dialog-titlebar
+{
+    display: none;
+}
+    
+.ui-widget-overlay
+{
+    background-color: #888888 !important; 
+}
+
+.ImageSelector .ContentButton:hover
+{
+    background-color: transparent;
+}
+

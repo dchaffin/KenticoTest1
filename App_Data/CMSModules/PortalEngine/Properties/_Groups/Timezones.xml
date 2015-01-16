@@ -1,0 +1,12 @@
+﻿<category name="Time zones" collapsible="true" collapsedbydefault="true" />
+
+<field column="TimeZoneType" fieldcaption="Time zone" visible="true" columntype="text" fieldtype="usercontrol" allowempty="true" columnsize="100" fielddescription="{$documentation.webpartproperties.timezonetype$}" guid="7bc3e789-4365-428f-bf85-9263d53d2941">
+  <settings>
+    <controlname>timezonetypeselector</controlname>
+  </settings>
+</field>
+<field column="CustomTimeZone" fieldcaption="Custom time zone" visible="true" columntype="text" fieldtype="usercontrol" allowempty="true" columnsize="100" fielddescription="{$documentation.webpartproperties.customtimezone$}" guid="0bf63e3a-c748-409f-8972-b5a1ef04e761">
+  <settings>
+    <controlname>timezoneselector</controlname>
+  </settings>
+</field>

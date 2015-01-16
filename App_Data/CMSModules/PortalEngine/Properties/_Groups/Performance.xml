@@ -1,0 +1,9 @@
+﻿<category name="Performance" collapsible="true" collapsedbydefault="true" />
+
+[Group:PerformanceBasic]
+<field column="PartialCacheMinutes" fieldcaption="Partial cache minutes" visible="true" columntype="integer" fieldtype="textbox" allowempty="true" columnsize="200" fielddescription="{$documentation.webpartproperties.partialcacheminutes$}" guid="e514e78f-24ca-4596-8718-5f4ea17804c4" />
+<field column="PartialCacheDependencies" fieldcaption="Partial cache dependencies" visible="true" columntype="longtext" fieldtype="usercontrol" allowempty="true" fielddescription="{$documentation.webpartproperties.cachedependencies$}" guid="bfe08ac4-c446-480c-b340-df35232eb13e" visibility="none">
+  <settings>
+    <controlname>cachedependencies</controlname>
+  </settings>
+</field>

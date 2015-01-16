@@ -1,0 +1,2 @@
+<%@ Control Language="C#" AutoEventWireup="true" Inherits="CMSWebParts_CommunityServices_GooglePlus_GooglePlusBadge" CodeFile="~/CMSWebParts/CommunityServices/GooglePlus/GooglePlusBadge.ascx.cs" %>
+<asp:Literal runat="server" ID="ltlPluginCode" EnableViewState="false" />

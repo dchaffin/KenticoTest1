@@ -1,0 +1,302 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CMS.VirtualPathHelper</name>
+    </assembly>
+    <members>
+        <member name="T:CMS.VirtualPathHelper.IVirtualPathProvider">
+            <summary>
+            Virtual path provider interface.
+            </summary>
+        </member>
+        <member name="M:CMS.VirtualPathHelper.IVirtualPathProvider.Register">
+            <summary>
+            Registers the provider object.
+            </summary>
+        </member>
+        <member name="T:CMS.VirtualPathHelper.VirtualPathSettings">
+            <summary>
+            Registered virtual path settings
+            </summary>
+        </member>
+        <member name="M:CMS.VirtualPathHelper.VirtualPathSettings.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="P:CMS.VirtualPathHelper.VirtualPathSettings.Path">
+            <summary>
+            Registered path
+            </summary>
+        </member>
+        <member name="P:CMS.VirtualPathHelper.VirtualPathSettings.ProvideFolderContent">
+            <summary>
+            If true, the folder content is provided for this path
+            </summary>
+        </member>
+        <member name="T:CMS.VirtualPathHelper.VirtualDirectoryEnum">
+            <summary>
+            Virtual directory enumeration.
+            </summary>
+        </member>
+        <member name="F:CMS.VirtualPathHelper.VirtualDirectoryEnum.Unknown">
+            <summary>
+            Unknown state.
+            </summary>
+        </member>
+        <member name="F:CMS.VirtualPathHelper.VirtualDirectoryEnum.NotVirtual">
+            <summary>
+            Not virtual directory.
+            </summary>
+        </member>
+        <member name="F:CMS.VirtualPathHelper.VirtualDirectoryEnum.WebParts">
+            <summary>
+            Web parts virtual directory.
+            </summary>
+        </member>
+        <member name="F:CMS.VirtualPathHelper.VirtualDirectoryEnum.WebPartLayouts">
+            <summary>
+            Web part layouts virtual directory.
+            </summary>
+        </member>
+        <member name="F:CMS.VirtualPathHelper.VirtualDirectoryEnum.Transformations">
+            <summary>
+            Transformations virtual directory.
+            </summary>
+        </member>
+        <member name="F:CMS.VirtualPathHelper.VirtualDirectoryEnum.Layouts">
+            <summary>
+            Layouts virtual directory.
+            </summary>
+        </member>
+        <member name="F:CMS.VirtualPathHelper.VirtualDirectoryEnum.PageLayouts">
+            <summary>
+            Page layouts virtual directory.
+            </summary>
+        </member>
+        <member name="F:CMS.VirtualPathHelper.VirtualDirectoryEnum.AdhocPageLayouts">
+            <summary>
+            Adhoc page layouts virtual directory.
+            </summary>
+        </member>
+        <member name="F:CMS.VirtualPathHelper.VirtualDirectoryEnum.Physical">
+            <summary>
+            Physical files.
+            </summary>
+        </member>
+        <member name="F:CMS.VirtualPathHelper.VirtualDirectoryEnum.Custom">
+            <summary>
+            Custom files.
+            </summary>
+        </member>
+        <member name="F:CMS.VirtualPathHelper.VirtualDirectoryEnum.DeviceLayout">
+            <summary>
+            Device layout virtual directory
+            </summary>
+        </member>
+        <member name="F:CMS.VirtualPathHelper.VirtualDirectoryEnum.AdHocDeviceLayout">
+            <summary>
+            Adhoc device layout directory
+            </summary>
+        </member>
+        <member name="T:CMS.VirtualPathHelper.VirtualPathHelper">
+            <summary>
+            Virtual provider helper.
+            </summary>
+        </member>
+        <member name="F:CMS.VirtualPathHelper.VirtualPathHelper.VERSION_GUID_PREFIX">
+            <summary>
+            Version guid prefix used in control path
+            </summary>
+        </member>
+        <member name="F:CMS.VirtualPathHelper.VirtualPathHelper.mProviderObject">
+            <summary>
+            Provider object instance.
+            </summary>
+        </member>
+        <member name="F:CMS.VirtualPathHelper.VirtualPathHelper.mProviderAssemblyName">
+            <summary>
+            Provider assembly name.
+            </summary>
+        </member>
+        <member name="F:CMS.VirtualPathHelper.VirtualPathHelper.mVirtualPathProviderInitilaized">
+            <summary>
+            Indicates if virtual provider is initialized.
+            </summary>
+        </member>
+        <member name="F:CMS.VirtualPathHelper.VirtualPathHelper.mVirtualPathProviderRegistered">
+            <summary>
+            Indicates if the virtual path provider was already registered
+            </summary>
+        </member>
+        <member name="F:CMS.VirtualPathHelper.VirtualPathHelper.mVirtualPaths">
+            <summary>
+            List of folders processed by virtual path provider
+            </summary>
+        </member>
+        <member name="F:CMS.VirtualPathHelper.VirtualPathHelper.mStartLogged">
+            <summary>
+            Flag whether the application start was already logged
+            </summary>
+        </member>
+        <member name="F:CMS.VirtualPathHelper.VirtualPathHelper.mLogVirtualFiles">
+            <summary>
+            If true, virtual files are logged to the file (for debug purposes).
+            </summary>
+        </member>
+        <member name="F:CMS.VirtualPathHelper.VirtualPathHelper.mLogFile">
+            <summary>
+            Logs file path.
+            </summary>
+        </member>
+        <member name="F:CMS.VirtualPathHelper.VirtualPathHelper.mCurrentLogIndent">
+            <summary>
+            Indentation level within the current virtual file log
+            </summary>
+        </member>
+        <member name="F:CMS.VirtualPathHelper.VirtualPathHelper.mLastLoggedFolder">
+            <summary>
+            Last folder that was logged
+            </summary>
+        </member>
+        <member name="F:CMS.VirtualPathHelper.VirtualPathHelper.mLastLoggedPath">
+            <summary>
+            Last logged file path
+            </summary>
+        </member>
+        <member name="F:CMS.VirtualPathHelper.VirtualPathHelper.mLastLogLoadControl">
+            <summary>
+            True if the last log item was a load control method
+            </summary>
+        </member>
+        <member name="F:CMS.VirtualPathHelper.VirtualPathHelper.mFolderStartTime">
+            <summary>
+            Folder start time for tracking the overall impact
+            </summary>
+        </member>
+        <member name="F:CMS.VirtualPathHelper.VirtualPathHelper.mLoadedControls">
+            <summary>
+            List of controls for which load was already called
+            </summary>
+        </member>
+        <member name="M:CMS.VirtualPathHelper.VirtualPathHelper.RemoveDirectives(System.String,System.String[])">
+            <summary>
+            Removes the default layout directives from the layout code.
+            </summary>
+            <param name="code">Code to process</param>
+            <param name="defaultDirectives">Default directives to be removed</param>
+        </member>
+        <member name="M:CMS.VirtualPathHelper.VirtualPathHelper.GetVirtualFileRelativePath(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Returns virtual relative for required parameters
+            </summary>
+            <param name="codeName">Object code name</param>
+            <param name="extension">Required extension starting with dot character</param>
+            <param name="directory">Starting directory</param>
+            <param name="prefix">Optional codename prefix. Prefix is delimited by "=" directory.</param>
+            <param name="versionGuid">Version GUID value</param>
+        </member>
+        <member name="M:CMS.VirtualPathHelper.VirtualPathHelper.GetVirtualObjectName(System.String,System.String,System.Collections.Generic.List{System.String}@)">
+            <summary>
+            Returns virtual object name and prefixes if available
+            </summary>
+            <param name="url">Current URL</param>
+            <param name="directory">Required directory</param>
+            <param name="prefixes">List of prefixes</param>
+        </member>
+        <member name="M:CMS.VirtualPathHelper.VirtualPathHelper.RegisterVirtualPathProvider">
+            <summary>
+            Creates the virtual path provider object and registers the object within the system.
+            </summary>
+        </member>
+        <member name="M:CMS.VirtualPathHelper.VirtualPathHelper.Init(System.Web.UI.Page)">
+            <summary>
+            Initializes virtual path provider by loading specific control
+            </summary>
+            <param name="page">Page</param>
+        </member>
+        <member name="M:CMS.VirtualPathHelper.VirtualPathHelper.EnsureInit(System.Web.UI.Page)">
+            <summary>
+            Ensures initialization of virtual path provider.
+            </summary>
+            <param name="page">Page that requested the initialization</param>
+        </member>
+        <member name="M:CMS.VirtualPathHelper.VirtualPathHelper.LogToFile(System.String,CMS.VirtualPathHelper.VirtualDirectoryEnum)">
+            <summary>
+            Logs the virtual file request to the file.
+            </summary>
+            <param name="virtualPath">Virtual path</param>
+            <param name="vd">Virtual directory</param>
+        </member>
+        <member name="M:CMS.VirtualPathHelper.VirtualPathHelper.LogVirtualToFile(System.String,CMS.VirtualPathHelper.VirtualDirectoryEnum)">
+            <summary>
+            Logs the virtual file request to the file.
+            </summary>
+            <param name="virtualPath">Virtual path</param>
+            <param name="vd">Virtual directory</param>
+        </member>
+        <member name="M:CMS.VirtualPathHelper.VirtualPathHelper.HandleFolderLog(System.String,CMS.VirtualPathHelper.VirtualDirectoryEnum,System.Boolean)">
+            <summary>
+            Handles the folder within the log
+            </summary>
+            <param name="virtualPath">Virtual path to log</param>
+            <param name="vd">Virtual directory type</param>
+            <param name="isLoadControl">If true, current log item is a load control item</param>
+        </member>
+        <member name="M:CMS.VirtualPathHelper.VirtualPathHelper.GetIndent(System.Int32)">
+            <summary>
+            Gets the indent for the given count
+            </summary>
+            <param name="indentCount">Indent count</param>
+        </member>
+        <member name="M:CMS.VirtualPathHelper.VirtualPathHelper.RegisterVirtualPath(System.String,System.Boolean)">
+            <summary>
+            Registers the given folder to be processed as virtual
+            </summary>
+            <param name="path">Relative path of the folder</param>
+            <param name="provideFolderContent">If true, the folder content is provided for this path to allow batch compilation</param>
+        </member>
+        <member name="M:CMS.VirtualPathHelper.VirtualPathHelper.GetVirtualPathSettings(System.String)">
+            <summary>
+            Gets the settings for the given virtual path
+            </summary>
+            <param name="path">Relative path to check</param>
+        </member>
+        <member name="M:CMS.VirtualPathHelper.VirtualPathHelper.PathIsVirtual(System.String)">
+            <summary>
+            Returns true if the given path is registered as virtual
+            </summary>
+            <param name="path">Relative path to check</param>
+        </member>
+        <member name="P:CMS.VirtualPathHelper.VirtualPathHelper.ProviderAssemblyName">
+            <summary>
+            Provider library assembly.
+            </summary>
+        </member>
+        <member name="P:CMS.VirtualPathHelper.VirtualPathHelper.ProviderObject">
+            <summary>
+            Returns the helper object.
+            </summary>
+        </member>
+        <member name="P:CMS.VirtualPathHelper.VirtualPathHelper.LogVirtualFiles">
+            <summary>
+            Logs virtual file operations?
+            </summary>
+        </member>
+        <member name="P:CMS.VirtualPathHelper.VirtualPathHelper.LogFile">
+            <summary>
+            Logs file.
+            </summary>
+        </member>
+        <member name="P:CMS.VirtualPathHelper.VirtualPathHelper.DeploymentMode">
+            <summary>
+            Gets or sets the value that indicates whether the virtual objects are in deployment mode (reflects CMSDeploymentMode hidden setting).
+            </summary>
+        </member>
+        <member name="P:CMS.VirtualPathHelper.VirtualPathHelper.VirtualObjectsAllowed">
+            <summary>
+            Gets the value that indicates whether virtual path provider is running or deployment mode is set
+            </summary>
+        </member>
+    </members>
+</doc>
